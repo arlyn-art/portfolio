@@ -1,4 +1,42 @@
 import { loadComponent, loadPage } from './include.js';
+import { setLanguage, initLanguage } from './language.js';
+import { initSectionTabs } from './section-tabs.js';
+
+async function initPage(page) {
+
+    await loadPage(page);
+
+    if (page === 'home') {
+
+        await loadComponent(
+            'overview',
+            './components/overview.html'
+        );
+
+        await loadComponent(
+            'experience',
+            './components/experience.html'
+        );
+
+        await loadComponent(
+            'projects',
+            './components/projects.html'
+        );
+
+        await loadComponent(
+            'contact',
+            './components/contact.html'
+        );
+
+        initSectionTabs();
+
+    }
+
+    setLanguage(
+        localStorage.getItem('lang') || 'en'
+    );
+
+}
 
 document.addEventListener('DOMContentLoaded', async () => {
 
@@ -12,9 +50,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         './components/partials/footer.html'
     );
 
-    loadPage('home');
+    // cukup sekali
+    initLanguage();
 
-    document.addEventListener('click', (e) => {
+    await initPage('home');
+
+    document.addEventListener('click', async (e) => {
 
         const link = e.target.closest('[data-page]');
 
@@ -22,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         e.preventDefault();
 
-        loadPage(link.dataset.page);
+        await initPage(link.dataset.page);
 
     });
 

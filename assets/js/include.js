@@ -1,3 +1,5 @@
+import { setLanguage } from './language.js';
+
 export async function loadComponent(id, file) {
     try {
         const response = await fetch(file);
@@ -12,15 +14,22 @@ export async function loadComponent(id, file) {
 
 export async function loadPage(page) {
     try {
+
         const response = await fetch(`./pages/${page}.html`);
         const html = await response.text();
 
         const app = document.getElementById('app');
+
         app.innerHTML = html;
 
         if (window.Alpine) {
             Alpine.initTree(app);
         }
+
+        const lang =
+            localStorage.getItem('lang') || 'id';
+
+        setLanguage(lang);
 
     } catch (error) {
         console.error(error);

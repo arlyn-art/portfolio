@@ -1,12 +1,81 @@
-<nav class="bg-gray-900 text-white">
-    <div class="container mx-auto flex justify-between items-center py-4">
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4">
 
-        <h1 class="text-xl font-bold">Portfolio</h1>
+    <div
+        class="flex items-center justify-between rounded-full border border-border bg-white/70 backdrop-blur-xl shadow-lg px-5 py-3">
 
-        <div class="flex gap-6">
-            <a href="#" data-page="home">Home</a>
-            <a href="#" data-page="about">About</a>
+        <div class="flex items-center gap-3">
+
+            <img
+                src="./assets/images/foto-profile.jpg"
+                class="w-12 h-12 rounded-full object-cover">
+
+            <div>
+
+                <h2 class="font-bold text-text">
+                    Arlyn
+                </h2>
+
+                <p class="text-sm text-subtext">
+                    Full Stack Developer
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="flex items-center gap-6">
+
+            <a
+                href="https://github.com/arlyn-art"
+                target="_blank"
+                class="hover:text-accent">
+
+                <i class="fab fa-github text-xl"></i>
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/arlyn-arta-pradipa-6b8102152/"
+                target="_blank"
+                class="hover:text-accent">
+
+                <i class="fab fa-linkedin text-xl"></i>
+
+            </a>
+
+            <!-- Toggle -->
+
+            <div
+                id="language-toggle"
+                class="relative flex w-24 rounded-full bg-surface p-1 cursor-pointer">
+
+                <!-- Slider -->
+
+                <div
+                    id="language-slider"
+                    class="absolute left-1 top-1 h-8 w-[44px] rounded-full bg-accent transition-all duration-300">
+                </div>
+
+                <button
+                    data-lang="en"
+                    class="relative z-10 flex-1 h-8 text-sm font-semibold text-white">
+
+                    EN
+
+                </button>
+
+                <button
+                    data-lang="id"
+                    class="relative z-10 flex-1 h-8 text-sm font-semibold text-subtext">
+
+                    ID
+
+                </button>
+
+            </div>
+
         </div>
 
     </div>
+
 </nav>

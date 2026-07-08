@@ -4,13 +4,17 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                background: '#050505',
-                surface: '#111111',
-                Border: '#262626',
-                Text: '#FFFFFF',
-                SubText: '#A3A3A3',
-                Accent: '#3B82F6',
-                Accent2: '#8B5CF6',
+                background: '#F7FAFC',
+                surface: '#FFFFFF',
+                border: '#E5E7EB',
+
+                text: '#111827',
+                subtext: '#6B7280',
+
+                accent: '#2563EB',
+                accent2: '#7C3AED',
+
+                success: '#22C55E',
             },
             backgroundImage: {
                 'product': "url('./assets/images/bg-product.jpg')",
