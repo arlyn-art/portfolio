@@ -80,7 +80,7 @@ export default {
 
         freelance: {
             title: "Active Freelance",
-            position: "Full Stack Web Developer",
+            position: "Full Stack Developer",
             company: "Self-Employed",
             period: "Sep 2023 — Present",
             description:
