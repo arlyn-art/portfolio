@@ -92,18 +92,29 @@ export default {
 
             items: [
                 {
-                    position: "Technical Writer & Customer Services",
                     company: "PT Krakatau Information Technology",
                     period: "Apr 2022 — Jun 2023",
-                    description:
-                        "Produced technical documentation, handled customer support, and collaborated with cross-functional teams."
+                    roles: [
+                        {
+                            period: "Apr 2022 — Jun 2022",
+                            position: "Customer Services",
+                            description:
+                                "Continued supporting the COVID-19 Task Force project after the service contract transitioned from the previous vendor to PT Krakatau Information Technology."
+                        },
+                        {
+                            period: "Jul 2022 — Jun 2023",
+                            position: "Technical Writer",
+                            description:
+                                "Continued under a new contract as a Technical Writer, preparing technical documentation, SOPs, and collaborating with cross-functional teams to support operational processes."
+                        }
+                    ]
                 },
                 {
                     position: "Supervisor Helpdesk",
                     company: "PT Ivosights",
                     period: "Jan 2021 — Mar 2022",
                     description:
-                        "Led the helpdesk team, monitored service quality, and coordinated issue resolution with technical teams."
+                        "Led helpdesk operations for the COVID-19 Task Force project, coordinating daily support activities until the service contract transitioned to a new provider."
                 }
             ]
         }

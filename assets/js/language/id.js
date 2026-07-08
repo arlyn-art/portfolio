@@ -88,21 +88,33 @@ export default {
 
         previous: {
             title: "Pengalaman Sebelumnya",
-
             items: [
                 {
-                    position: "Technical Writer & Customer Services",
                     company: "PT Krakatau Information Technology",
                     period: "Apr 2022 — Jun 2023",
-                    description:
-                        "Menyusun dokumentasi teknis, menangani dukungan pelanggan, dan berkolaborasi dengan berbagai tim."
+                    roles: [
+
+                        {
+                            period: "Apr 2022 — Jun 2022",
+                            position: "Customer Services",
+                            description:
+                                "Melanjutkan dukungan pada proyek Satgas COVID-19 setelah kontrak layanan berpindah dari vendor sebelumnya ke PT Krakatau Information Technology."
+                        },
+                        {
+                            period: "Jul 2022 — Jun 2023",
+                            position: "Technical Writer",
+                            description:
+                                "Melanjutkan kontrak baru sebagai Technical Writer dengan menyusun dokumentasi teknis, SOP, dan berkolaborasi dengan berbagai tim untuk mendukung kebutuhan operasional."
+                        }
+
+                    ]
                 },
                 {
                     position: "Supervisor Helpdesk",
                     company: "PT Ivosights",
                     period: "Jan 2021 — Mar 2022",
                     description:
-                        "Memimpin tim helpdesk, memantau kualitas layanan, dan mengoordinasikan penyelesaian masalah teknis."
+                        "Memimpin operasional helpdesk pada proyek Satgas COVID-19, mengoordinasikan layanan dan penyelesaian masalah hingga kontrak layanan dialihkan ke penyedia berikutnya."
                 }
             ]
         }
