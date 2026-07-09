@@ -1,9 +1,9 @@
 <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-0">
     <div class="flex items-center justify-between rounded-full border border-border bg-white/70 backdrop-blur-xl shadow-lg px-5 py-3">
         <div class="flex items-center gap-3">
-            <img
-                src="./assets/images/foto-profile.jpg"
-                class="w-12 h-12 rounded-full object-cover">
+            <a href="/" data-page="home">
+                <img src="./assets/images/foto-profile.jpg" class="w-12 h-12 rounded-full object-cover">
+            </a>
             <div>
                 <h2 class="font-bold text-text">
                     Arlyn
@@ -18,6 +18,9 @@
             <div class="hidden lg:flex items-center gap-8">
                 <a href="" data-page="profile" class="hover:text-accent transition">
                     Profile
+                </a>
+                <a href="" data-page="projects" class="hover:text-accent transition">
+                    Projects
                 </a>
                 <a href="" data-page="journey" class="hover:text-accent transition">
                     Journey
@@ -46,7 +49,7 @@
 
 <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 lg:hidden z-50">
     <div class="flex items-center gap-2 rounded-2xl border border-border bg-white/80 backdrop-blur-xl shadow-xl px-3 py-2">
-        <a href="/" class="flex flex-col items-center justify-center w-20 py-2 rounded-xl text-accent">
+        <a href="/" data-page="home" class="flex flex-col items-center justify-center w-20 py-2 rounded-xl text-accent">
             <i class="fas fa-house text-lg"></i>
             <span class="text-xs mt-1">
                 Home
@@ -56,6 +59,12 @@
             <i class="fas fa-user text-lg"></i>
             <span class="text-xs mt-1">
                 Profile
+            </span>
+        </a>
+        <a href="" data-page="projects" class="flex flex-col items-center justify-center w-20 py-2 rounded-xl text-subtext hover:text-accent">
+            <i class="fas fa-briefcase text-lg"></i>
+            <span class="text-xs mt-1">
+                Projects
             </span>
         </a>
         <a href="" data-page="journey" class="flex flex-col items-center justify-center w-20 py-2 rounded-xl text-subtext hover:text-accent">

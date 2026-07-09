@@ -34,40 +34,74 @@
                 </p>
 
                 <div class="mt-10 flex gap-4">
-                    <a href="#projects"
+                    <a href="/assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer"
                         class="rounded-xl bg-accent px-6 py-4 text-white font-semibold transition hover:-translate-y-1">
-                        <span data-i18n="hero.buttons.project"></span>
+                        <span data-i18n="hero.buttons.cv"></span>
                     </a>
-                    <a href="#contact"
+                    <a href="/assets/pdf/portofolio.pdf" target="_blank" rel="noopener noreferrer"
                         class="rounded-xl border border-border bg-surface px-6 py-4 font-semibold transition hover:border-accent">
-                        <span data-i18n="hero.buttons.contact"></span>
+                        <span data-i18n="hero.buttons.portfolio"></span>
                     </a>
                 </div>
 
-                <div class="grid grid-cols-3 gap-8 mt-16 border-t border-border pt-8">
+                <div class="grid grid-cols-4 gap-8 mt-16 border-t border-border pt-8" 
+                    x-data="{
+                        animateCounter(el) {
+                            // Jeda sedikit nunggu i18n selesai render text
+                            setTimeout(() => {
+                                const targetText = el.innerText.trim();
+                                const target = parseInt(targetText.replace(/[^0-9]/g, ''), 10);
+                                if (isNaN(target)) return;
+                                const suffix = targetText.replace(/[0-9]/g, '');
+                                
+                                let current = 0;
+                                const duration = 1200; 
+                                const startTime = performance.now();
+                                
+                                const update = (now) => {
+                                    const progress = Math.min((now - startTime) / duration, 1);
+                                    current = Math.floor(progress * target);
+                                    el.innerText = current.toLocaleString() + suffix;
+                                    
+                                    if (progress < 1) {
+                                        requestAnimationFrame(update);
+                                    }
+                                };
+                                requestAnimationFrame(update);
+                            }, 150);
+                        }
+                    }">
+                    
                     <div>
                         <h3 class="text-3xl font-bold"
-                            data-i18n="hero.stats.0.value">
+                            data-i18n="hero.stats.0.value"
+                            x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext"
-                            data-i18n="hero.stats.0.label">
-                        </p>
+                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.0.label"></p>
                     </div>
+
                     <div>
                         <h3 class="text-3xl font-bold"
-                            data-i18n="hero.stats.1.value">
+                            data-i18n="hero.stats.1.value"
+                            x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext"
-                            data-i18n="hero.stats.1.label">
-                        </p>
+                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.1.label"></p>
                     </div>
+
                     <div>
                         <h3 class="text-3xl font-bold"
-                            data-i18n="hero.stats.2.value">
+                            data-i18n="hero.stats.2.value"
+                            x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext"
-                            data-i18n="hero.stats.2.label">
-                        </p>
+                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.2.label"></p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold"
+                            data-i18n="hero.stats.3.value"
+                            x-init="animateCounter($el)">
+                        </h3>
+                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.3.label"></p>
                     </div>
                 </div>
             </div>
@@ -177,7 +211,7 @@
     </div>
 </section>
 
-<div id="overview" class="portfolio-section"></div>
+<div id="overview" class="portfolio-section opacity-0"></div>
 
 <div class="section-divider flex items-center justify-center py-0 opacity-0 transition-all duration-500">
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
@@ -185,7 +219,7 @@
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
 </div>
 
-<div id="experience" class="portfolio-section"></div>
+<div id="experience" class="portfolio-section opacity-0"></div>
 
 <div class="section-divider flex items-center justify-center py-0 opacity-0 transition-all duration-500">
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
@@ -193,7 +227,7 @@
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
 </div>
 
-<div id="projects" class="portfolio-section"></div>
+<div id="projects" class="portfolio-section opacity-0"></div>
 
 <div class="section-divider flex items-center justify-center py-0 opacity-0 transition-all duration-500">
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
@@ -201,5 +235,5 @@
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
 </div>
 
-<div id="contact" class="portfolio-section"></div>
+<div id="contact" class="portfolio-section opacity-0"></div>
 <div id="project-modal-container"></div>

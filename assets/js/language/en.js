@@ -8,8 +8,8 @@ export default {
             "I build modern websites that are fast, scalable and user friendly.",
 
         buttons: {
-            project: "View Projects",
-            contact: "Contact Me"
+            cv: "View CV",
+            portfolio: "View Portfolio"
         },
 
         stats: [
@@ -23,7 +23,11 @@ export default {
             },
             {
                 value: "100%",
-                label: "Passion"
+                label: "Client Satisfaction"
+            },
+            {
+                value: "20+",
+                label: "Clients & Partners"
             }
         ]
     },
@@ -128,7 +132,21 @@ export default {
             "Commercial",
             "Personal",
             "Documentation"
-        ]
+        ],
+        button: "View All Projects"
+    },
+
+    channels: {
+        title: "👋 Contact Me Through Social Media",
+        description: "Choose the communication channel you prefer to reach out to me."
+    },
+
+    footer: {
+        "about": "Helping turn digital ideas into reality through clean code and interactive design.",
+        "nav_title": "Navigation",
+        "connect_title": "Let's Connect",
+        "connect_desc": "Interested in collaborating? Feel free to contact me anytime.",
+        "built_with": "Built with using Tailwind & Alpine"
     }
 
 }

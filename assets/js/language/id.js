@@ -8,8 +8,8 @@ export default {
             "Saya membangun website modern yang cepat, scalable, dan mudah digunakan.",
 
         buttons: {
-            project: "Lihat Project",
-            contact: "Hubungi Saya"
+            cv: "Lihat CV",
+            portfolio: "Lihat Portofolio"
         },
 
         stats: [
@@ -23,7 +23,11 @@ export default {
             },
             {
                 value: "100%",
-                label: "Semangat"
+                label: "Kepuasan Klien"
+            },
+            {
+                value: "20+",
+                label: "Klien & Mitra"
             }
         ]
     },
@@ -129,6 +133,19 @@ export default {
             "Pribadi",
             "Dokumentasi"
         ],
+        button:"Lihat Semua Proyek"
+    },
 
+    channels:{
+        title:"👋 Hubungi Saya Melalui<br>Media Sosial",
+        description:"Pilih saluran komunikasi yang ingin digunakan untuk menghubungi saya.",
+    },
+
+    footer: {
+        "about": "Membantu merealisasikan ide digital menjadi kenyataan melalui kode yang bersih dan desain yang interaktif.",
+        "nav_title": "Navigasi",
+        "connect_title": "Mari Terhubung",
+        "connect_desc": "Tertarik untuk berkolaborasi? Hubungi saya kapan saja.",
+        "built_with": "Dibuat dengan menggunakan Tailwind & Alpine"
     }
 }

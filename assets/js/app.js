@@ -32,21 +32,43 @@ async function initPage(page) {
         );
 
         await loadComponent(
-            'project-modal-container', 
+            'project-modal-container',
             './components/partials/project-modal.html'
         );
 
-        initProjects();
+        await loadComponent(
+            'floating',
+            './components/floating.html'
+        );
+
+        initProjects({
+            limit: 3
+        });
+
         initSectionTabs();
         initProjectModal();
         initContact();
+    }
 
+    if (page === 'projects') {
+
+        await loadComponent(
+            'projects',
+            './components/projects.html'
+        );
+
+        await loadComponent(
+            'project-modal-container',
+            './components/partials/project-modal.html'
+        );
+
+        initProjects(); 
+        initProjectModal();
     }
 
     setLanguage(
         localStorage.getItem('lang') || 'en'
     );
-
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -61,7 +83,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         './components/partials/footer.html'
     );
 
-    // cukup sekali
     initLanguage();
 
     await initPage('home');
