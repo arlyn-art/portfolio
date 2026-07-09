@@ -118,5 +118,17 @@ export default {
                 }
             ]
         }
+    },
+
+    projects:{
+        title:"PROJECTS",
+        subtitle:"Karya Terpilih",
+        description:"Berikut beberapa proyek yang pernah saya kerjakan.",
+        tabs:[
+            "Komersial",
+            "Pribadi",
+            "Dokumentasi"
+        ],
+
     }
 }

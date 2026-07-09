@@ -118,6 +118,17 @@ export default {
                 }
             ]
         }
+    },
+
+    projects: {
+        title: "PROJECTS",
+        subtitle: "Selected Works",
+        description: "Here are some of the projects I've worked on.",
+        tabs: [
+            "Commercial",
+            "Personal",
+            "Documentation"
+        ]
     }
 
 }

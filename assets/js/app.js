@@ -1,6 +1,9 @@
 import { loadComponent, loadPage } from './include.js';
 import { setLanguage, initLanguage } from './language.js';
 import { initSectionTabs } from './section-tabs.js';
+import { initProjects } from "./projects.js";
+import { initProjectModal } from "./project-modal.js";
+import { initContact } from "./contact.js";
 
 async function initPage(page) {
 
@@ -28,7 +31,15 @@ async function initPage(page) {
             './components/contact.html'
         );
 
+        await loadComponent(
+            'project-modal-container', 
+            './components/partials/project-modal.html'
+        );
+
+        initProjects();
         initSectionTabs();
+        initProjectModal();
+        initContact();
 
     }
 
