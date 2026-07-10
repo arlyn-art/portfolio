@@ -1,6 +1,6 @@
 import projects from "./data/projects.js";
 
-let currentCategory = "commercial";
+let currentCategory = localStorage.getItem("currentProjectCategory") || "commercial";
 
 export function initProjects(options = {}) {
 
@@ -8,7 +8,11 @@ export function initProjects(options = {}) {
         limit = null
     } = options;
 
+    currentCategory = localStorage.getItem("currentProjectCategory") || "commercial";
+
     renderProjects(currentCategory, limit);
+    
+    syncTabButtons(currentCategory);
 
     const buttons = document.querySelectorAll(".project-tab");
 
@@ -16,15 +20,11 @@ export function initProjects(options = {}) {
 
         button.addEventListener("click", () => {
 
-            buttons.forEach(item => {
-                item.classList.remove("bg-accent", "text-white");
-                item.classList.add("text-subtext");
-            });
-
-            button.classList.add("bg-accent", "text-white");
-            button.classList.remove("text-subtext");
-
             currentCategory = button.dataset.project;
+            
+            localStorage.setItem("currentProjectCategory", currentCategory);
+
+            syncTabButtons(currentCategory);
 
             renderProjects(currentCategory, limit);
 
@@ -46,6 +46,19 @@ export function initProjects(options = {}) {
 
     });
 
+}
+
+function syncTabButtons(activeCategory) {
+    const buttons = document.querySelectorAll(".project-tab");
+    buttons.forEach(item => {
+        if (item.dataset.project === activeCategory) {
+            item.classList.add("bg-accent", "text-white");
+            item.classList.remove("text-subtext");
+        } else {
+            item.classList.remove("bg-accent", "text-white");
+            item.classList.add("text-subtext");
+        }
+    });
 }
 
 function renderProjects(category, limit = null) {
@@ -78,7 +91,6 @@ function renderProjects(category, limit = null) {
 }
 
 function createCard(project, lang) {
-
     return `
     <div class="project-card group overflow-hidden rounded-3xl border border-border bg-surface transition duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-xl cursor-pointer"
         data-id="${project.id}">
@@ -133,5 +145,4 @@ function createCard(project, lang) {
 
     </div>
     `;
-
 }
