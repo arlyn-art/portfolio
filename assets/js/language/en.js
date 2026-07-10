@@ -147,6 +147,84 @@ export default {
         "connect_title": "Let's Connect",
         "connect_desc": "Interested in collaborating? Feel free to contact me anytime.",
         "built_with": "Built with using Tailwind & Alpine"
+    },
+
+    profile: {
+        title: "PROFILE",
+        subtitle: "About Me",
+        description:
+            "Learn more about my background, mindset, and experience as a Full Stack Web Developer.",
+        badge: "About Me",
+        about_title:
+            "Building digital products that are simple, scalable, and enjoyable to use.",
+        about_1:
+            "I am a Full Stack Web Developer with more than three years of experience building company websites, CMS dashboards, REST APIs, and internal business systems using Laravel, Vue.js, React, Filament, and Tailwind CSS.",
+        about_2:
+            "I enjoy turning business requirements into efficient digital solutions. I believe great software should not only work correctly but also be maintainable, fast, and provide an excellent user experience.",
+        facts: [
+            {
+                title: "Location",
+                value: "Indonesia"
+            },
+            {
+                title: "Experience",
+                value: "4+ Years"
+            },
+            {
+                title: "Focus",
+                value: "Full Stack Web"
+            },
+            {
+                title: "Status",
+                value: "Open for Freelance"
+            }
+        ],
+
+        values_title: "Core Values",
+        values: [
+            {
+                title: "Clean Code",
+                description:
+                    "Writing maintainable, readable, and scalable code with consistent architecture."
+            },
+            {
+                title: "Problem Solving",
+                description:
+                    "Understanding business problems before choosing the right technical solution."
+            },
+            {
+                title: "Continuous Learning",
+                description:
+                    "Continuously learning new technologies to build better software every day."
+            }
+        ]
+    },
+
+    journey:{
+
+        title:"JOURNEY",
+        subtitle:"What Shapes Me Beyond Coding",
+        description:"Outside of programming, I enjoy exploring new places, hiking mountains, discovering local cultures, and capturing memorable moments. Every journey teaches me something valuable that also influences how I approach work and life.",
+        quote:
+        "Every place I visit leaves behind a lesson that shapes the way I think, create, and solve problems.",
+        travel_title:"Places I've Explored",
+        travel_description:"A collection of places that have become part of my journey.",
+        lessons_title:"What Traveling Has Taught Me",
+        lessons:[
+            {
+                title:"Adaptability",
+                description:"Every destination is different. Learning to adapt quickly has helped me become more flexible when solving technical challenges."
+            },
+            {
+                title:"Patience",
+                description:"Long hikes, unexpected weather, and unfamiliar places remind me that good things often require patience."
+            },
+            {
+                title:"Curiosity",
+                description:"Exploring new cultures and environments constantly inspires me to keep learning both inside and outside technology."
+            }
+        ]
+
     }
 
 }

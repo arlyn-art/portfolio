@@ -4,6 +4,9 @@ import { initSectionTabs } from './section-tabs.js';
 import { initProjects } from "./projects.js";
 import { initProjectModal } from "./project-modal.js";
 import { initContact } from "./contact.js";
+import { initProfile } from "./profile.js";
+import { initJourney } from "./journey.js";
+import { initJourneyModal } from "./journey-modal.js";
 
 async function initPage(page) {
 
@@ -41,13 +44,30 @@ async function initPage(page) {
             './components/floating.html'
         );
 
-        initProjects({
-            limit: 3
-        });
-
-        initSectionTabs();
+        initProjects({ limit: 3 });
         initProjectModal();
+        initProfile();
         initContact();
+        initSectionTabs();
+        
+    }
+
+    if (page === 'profile') {
+        
+        initProfile();
+    }
+
+    if(page==="journey"){
+
+        await loadComponent(
+            'journey-modal-container',
+            './components/partials/journey-modal.html'
+        );
+
+        initJourney();
+
+        initJourneyModal();
+
     }
 
     if (page === 'projects') {
