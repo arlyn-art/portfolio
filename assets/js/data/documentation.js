@@ -29,7 +29,7 @@ export default [
         github: null,
     },
     {
-        id: "doc-3",
+        id: "doc-2",
         category: "documentation",
         company: "PT Krakatau Information Technology",
         title: {
@@ -80,7 +80,7 @@ export default [
         github: null,
     },
     {
-        id: "doc-4",
+        id: "doc-3",
         category: "documentation",
         company: "Pusat Pemulihan Aset Kejaksaan Agung RI x Krakatau IT",
         title: {
@@ -131,54 +131,160 @@ export default [
         github: null,
     },
     {
-        id: "doc-5",
+        id: "doc-4",
         category: "documentation",
         company: "PT Krakatau Information Technology",
         title: {
-            en: "Digital Mitra Solution WhatsApp Bot Blueprint",
-            id: "Cetak Biru Digital Mitra Solution WhatsApp Bot"
+            en: "SISKAMTER Integrated Reporting Application Blueprint",
+            id: "Cetak Biru Aplikasi Pelaporan Terintegrasi SISKAMTER"
         },
-        thumbnail: "assets/images/projects/documentation/scm.jpg",
+        thumbnail: "assets/images/projects/documentation/siskamter.jpg",
         shortDescription: {
-            en: "Comprehensive system blueprint and workflow design for an automated franchise management and transaction ecosystem powered by WhatsApp Bot.",
-            id: "Cetak biru sistem dan desain alur kerja komprehensif untuk ekosistem transaksi dan manajemen kemitraan otomatis berbasis WhatsApp Bot."
+            en: "Comprehensive system concept and workflow documentation for an integrated online community security reporting system (Siskamling Online) powered by mobile and web platforms.",
+            id: "Dokumentasi konsep sistem dan alur kerja komprehensif untuk sistem pelaporan keamanan lingkungan terintegrasi berbasis online (Siskamling Online) melalui platform mobile dan web."
         },
         description: {
-            en: "Authored the technical concept and system architecture documentation for 'Digital Mitra Solution', an innovative automated system designed by Krakatau IT. This document establishes the blueprint for an intelligent WhatsApp Bot interface that handles customer registration, dynamic franchise lists, location tracking, and direct conversational transactions. It also outlines the back-end data processing infrastructure that channels all source data into centralized operational servers for real-time reporting, predictive analysis, and business intelligence.",
-            id: "Menyusun dokumentasi konsep teknis dan arsitektur sistem untuk 'Digital Mitra Solution', sebuah sistem otomatisasi inovatif yang dirancang oleh Krakatau IT. Dokumen ini menetapkan cetak biru antarmuka WhatsApp Bot cerdas yang menangani registrasi pelanggan, daftar kemitraan dinamis, pelacakan lokasi, dan transaksi langsung via percakapan. Dokumen ini juga menguraikan infrastruktur pemrosesan data back-end yang menyalurkan seluruh sumber data ke dalam server operasional terpusat untuk pelaporan langsung, analisis prediktif, dan intelijen bisnis."
+            en: "Authored the technical concept, application workflow, and system architecture documentation for 'SISKAMTER' (Sistem Keamanan Terintegrasi), developed by Krakatau IT[cite: 5]. Based on the Chief of Indonesian National Police Regulation No. 23 Year 2007[cite: 5], this blueprint details the transformation of traditional community security (Siskamling) into a modern digital ecosystem[cite: 5]. The document establishes the framework for mobile apps featuring panic buttons, geolocation, and real-time community reporting, as well as an integrated back-end web dashboard for administrative monitoring, data analysis, and multi-agency coordination[cite: 5].",
+            id: "Menyusun dokumentasi konsep teknis, alur kerja aplikasi, dan arsitektur sistem untuk 'SISKAMTER' (Sistem Keamanan Terintegrasi) yang dirancang oleh Krakatau IT[cite: 5]. Berdasarkan Peraturan Kepala Kepolisian Negara Republik Indonesia Nomor 23 Tahun 2007[cite: 5], cetak biru ini merinci transformasi keamanan lingkungan tradisional (Siskamling) ke dalam ekosistem digital modern[cite: 5]. Dokumen ini menetapkan kerangka kerja untuk aplikasi seluler yang dilengkapi dengan tombol darurat, geolokasi, dan pelaporan langsung[cite: 5], serta dasbor web back-end yang terintegrasi untuk pemantauan administratif, analisis data, dan koordinasi antar-instansi[cite: 5]."
         },
-        technologies: ["Microsoft PowerPoint", "Draw.io", "Visio"],
+        technologies: ["Microsoft PowerPoint", "Google Maps API"],
         features: {
             en: [
-                "Conversational Franchise Registration & Management Flow",
-                "Automated Franchise Location & Menu Discovery Matrix",
-                "Conversational Transaction & Ordering System Protocol",
-                "Centralized Data Server Integration Schema",
-                "Back-end Analytics Framework (Reporting, Predictive, & Intelligence Analysis)"
+                "SISKACare Emergency Agency Integration Protocol (Police, Firefighters, Medical)[cite: 5]",
+                "SISKAMTER Community Framework (CCTV Monitoring, Panic Button, Push-to-Talk, & Geolocation Services)[cite: 5]",
+                "SISKAMTER Family Security Suite (Remote Device Locking, Distance Alert, & Find My Phone)[cite: 5]",
+                "Integrated Back-end Analytics Framework (Predictive, Intelligence, and Decision Management Analysis)[cite: 5]",
+                "Centralized Data Center Infrastructure with 24/7 Monitoring Solution[cite: 5]",
+                "Web Dashboard Administrative Control Mapping (Live Reports, Disaster Simbology, User & Report Geospatial Tracking)[cite: 5]"
             ],
             id: [
-                "Alur Registrasi & Manajemen Kemitraan berbasis Percakapan",
-                "Matriks Penemuan Menu & Lokasi Kemitraan Otomatis",
-                "Protokol Sistem Transaksi & Pemesanan via Percakapan",
-                "Skema Integrasi Server Data Terpusat",
-                "Kerangka Kerja Analisis Back-end (Pelaporan, Prediktif, & Analisis Intelijen)"
+                "Protokol Integrasi Instansi Darurat SISKACare (Polisi, Pemadam Kebakaran, Puskesmas/Rumah Sakit)[cite: 5]",
+                "Kerangka Kerja Komunitas SISKAMTER (Monitoring CCTV, Tombol Darurat, Push-to-Talk, & Layanan Geolokasi)[cite: 5]",
+                "Paket Keamanan Keluarga SISKAMTER (Penguncian Perangkat Jarak Jauh, Peringatan Jarak, & Temukan Ponsel Saya)[cite: 5]",
+                "Kerangka Kerja Analisis Back-end Terintegrasi (Analisis Prediktif, Intelijen, dan Manajemen Keputusan)[cite: 5]",
+                "Infrastruktur Data Center Terpusat dengan Solusi Pengawasan 24 Jam[cite: 5]",
+                "Pemetaan Kontrol Administratif Dasbor Web (Laporan Langsung, Simbol Bencana, Pelacakan Geospasial Pengguna & Laporan)[cite: 5]"
             ]
         },
         responsibilities: {
             en: [
-                "Translating Franchise Business Processes into Automated Chatbot Workflows",
-                "Designing System Interaction and Keyword Mapping Diagrams for WhatsApp Bot",
-                "Documenting Back-end Data Processing and Analytics Infrastructure Requirements",
-                "Structuring UI/UX Mockup Flow for Back-end Dashboard Authentication & Controls"
+                "Translating Traditional Siskamling Security Regulations into Modern Online Ecosystem Frameworks[cite: 5]",
+                "Designing Feature Categorization Matrices for Care, Community, and Family Mobile Solutions[cite: 5]",
+                "Documenting Integrated Data Processing System Flows and Back-end Analytical Requirements[cite: 5]",
+                "Structuring Web Dashboard Control Interfaces for Geospatial Tracking and Analytical Reporting Map Layouts[cite: 5]"
             ],
             id: [
-                "Menerjemahkan Proses Bisnis Kemitraan ke dalam Alur Kerja Chatbot Otomatis",
-                "Merancang Diagram Interaksi Sistem dan Pemetaan Kata Kunci untuk WhatsApp Bot",
-                "Mendokumentasikan Kebutuhan Infrastruktur Pemrosesan Data Back-end dan Analisis",
-                "Menyusun Alur Mockup UI/UX untuk Autentikasi & Kontrol Dasbor Back-end"
+                "Menerjemahkan Regulasi Keamanan Siskamling Tradisional ke dalam Kerangka Kerja Ekosistem Online Modern[cite: 5]",
+                "Merancang Matriks Kategorisasi Fitur untuk Solusi Seluler Layanan (Care), Komunitas, dan Keluarga[cite: 5]",
+                "Mendokumentasikan Alur Sistem Pemrosesan Data Terintegrasi dan Kebutuhan Analisis Back-end[cite: 5]",
+                "Menyusun Antarmuka Kontrol Dasbor Web untuk Layout Peta Pelacakan Geospasial dan Pelaporan Analitis[cite: 5]"
             ]
         },
         liveUrl: null,
         github: null,
     },
+    {
+        id: "doc-5",
+        category: "documentation",
+        company: "PT Krakatau Information Technology",
+        title: {
+            en: "Tenancy Management System (TMS) Blueprint & Implementation",
+            id: "Cetak Biru & Implementasi Tenancy Management System (TMS)"
+        },
+        thumbnail: "assets/images/projects/documentation/tms.jpg",
+        shortDescription: {
+            en: "System architecture and implementation framework for a centralized industrial estate tenancy system integrating web and mobile platforms with core ERP solutions.",
+            id: "Arsitektur sistem dan kerangka kerja implementasi untuk sistem tata kelola penyewa kawasan industri terpusat yang mengintegrasikan platform web dan mobile dengan solusi inti ERP."
+        },
+        description: {
+            en: "Authored the technical specifications, system architecture, and rollout documentation for the Danareksa Tenancy Management System (TMS) developed by Krakatau IT. The system transforms industrial estate management by standardizing business processes and ensuring seamless front-end and back-end integration across multiple subsidiaries. The framework covers cross-platform components including mobile tenant apps for ticket raising and web dashboards for comprehensive sales, account billing, contract management, and geospatial property analytics linked to ERP finance modules.",
+            id: "Menyusun spesifikasi teknis, arsitektur sistem, dan dokumentasi peluncuran untuk Danareksa Tenancy Management System (TMS) yang dikembangkan oleh Krakatau IT. Sistem ini mentransformasi pengelolaan kawasan industri dengan menstandardisasi proses bisnis serta memastikan integrasi tanpa hambatan antara sistem front-end dan back-end di berbagai anak perusahaan. Kerangka kerja ini mencakup komponen lintas platform termasuk aplikasi seluler penyewa untuk pelaporan keluhan dan dasbor web untuk pengelolaan penjualan, tagihan akun, manajemen kontrak, hingga analisis properti geospasial yang terhubung ke modul keuangan ERP."
+        },
+        technologies: ["Microsoft PowerPoint", "ERP System Integration", "Cloud Infrastructure"],
+        features: {
+            en: [
+                "Cross-Platform Architecture (Web-Based Administration & Mobile App Tenant Ecosystem)",
+                "Real-Time Core ERP Integration Protocol (Seamless Sync with Finance Modules & Cash Receipt Status)",
+                "Comprehensive Property Sales Management (Inquiry, Negotiation Tracking, & Geospatial Map Information)",
+                "End-to-End Contract Lifecycles (Automated Amendment, Renewal, Termination, & Early Expiry Alerts)",
+                "Full Accounts & Bills Automation (Proforma Billing, Installment Plans, Late Payment Penalties, & Dunning Procedures)",
+                "Multi-Tenant Property Reporting (Occupancy Lease Tracking, Facility Usage Dashboards, & Financial Aging Reports)"
+            ],
+            id: [
+                "Arsitektur Lintas Platform (Administrasi Berbasis Web & Ekosistem Aplikasi Seluler Penyewa)",
+                "Protokol Integrasi ERP Inti Real-Time (Sinkronisasi Mulus dengan Modul Keuangan & Status Penerimaan Kas)",
+                "Manajemen Penjualan Properti Komprehensif (Inquiry, Pelacakan Negosiasi, & Informasi Peta Geospasial)",
+                "Siklus Hidup Kontrak End-to-End (Amandemen Otomatis, Pembaruan, Terminasi, & Peringatan Dini Kontrak Berakhir)",
+                "Otomatisasi Akun & Tagihan Penuh (Proforma Billing, Rencana Angsuran, Denda Keterlambatan, & Prosedur Penagihan)",
+                "Pelaporan Properti Multi-Tenant (Pelacakan Sewa Okupansi, Dasbor Penggunaan Fasilitas, & Laporan Aging Keuangan)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Formulating Strategic System Blueprints to Standardize Industrial Estate Business Processes Across Holding Levels",
+                "Mapping Inter-System Data Flows Between Mobile Apps, Web-Based Systems, 3rd Party Payment Gateways, and Core ERP Modules",
+                "Structuring Operational Workflows for Tenant Helpdesk Ticketing, Billing Processes, and Multi-Level Organizational Structures",
+                "Defining Implementation Criteria, Testing Checklists (UT, SIT, UAT), and Data Conversion Standards for Multi-Phase Rollout Scheduling"
+            ],
+            id: [
+                "Merumuskan Cetak Biru Sistem Strategis untuk Menstandardisasi Proses Bisnis Kawasan Industri di Tingkat Holding",
+                "Memetakan Alur Data Antar-Sistem antara Aplikasi Seluler, Sistem Berbasis Web, Payment Gateway Pihak Ketiga, dan Modul ERP Inti",
+                "Menyusun Alur Kerja Operasional untuk Tiket Helpdesk Penyewa, Proses Penagihan, dan Struktur Organisasi Multi-Level",
+                "Menetapkan Kriteria Implementasi, Checklist Pengujian (UT, SIT, UAT), dan Standar Konversi Data untuk Penjadwalan Peluncuran Multi-Fase"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    },
+    {
+        id: "doc-6",
+        category: "documentation",
+        company: "PT Krakatau Information Technology",
+        title: {
+            en: "Website & Social Media Managed Service Proposal",
+            id: "Proposal Managed Service Website & Media Sosial"
+        },
+        thumbnail: "assets/images/projects/documentation/aps.jpg",
+        shortDescription: {
+            en: "Comprehensive digital management services including website optimization, secure content administration, and strategic social media growth handling.",
+            id: "Layanan manajemen digital komprehensif termasuk optimasi website, administrasi konten yang aman, dan penanganan pertumbuhan media sosial yang strategis."
+        },
+        description: {
+            en: "Provided an end-to-end operational framework and proposal for corporate digital management under PT Krakatau Information Technology. The service delivers robust Website Management—covering regular content updates, performance tuning, and cybersecurity testing via OWASP vulnerability assessments—alongside strategic Social Media Management designed to elevate brand awareness through targeted copywriting, creative asset design, and continuous trend analysis. Optional high-tech extensions include an Omni-Channel Customer Engagement Experience platform and a real-time Digital Intelligence Platform for sentiment and competitor monitoring.",
+            id: "Menyusun kerangka kerja operasional dan proposal menyeluruh untuk manajemen digital korporat di bawah PT Krakatau Information Technology. Layanan ini menghadirkan Manajemen Website yang andal—mencakup pembaruan konten rutin, peningkatan performa, dan pengujian keamanan siber melalui penilaian kerentanan OWASP—serta Manajemen Media Sosial strategis yang dirancang untuk meningkatkan kesadaran merek melalui copywriting terarget, desain aset kreatif, dan analisis tren berkelanjutan. Ekstensi teknologi opsional mencakup platform Omni-Channel Customer Engagement Experience dan Platform Intelegensi Digital real-time untuk pemantauan sentimen serta kompetitor."
+        },
+        technologies: ["Website Management", "SEO & Copywriting", "OWASP Vulnerability Assessment", "Omni-Channel Integration", "Digital Intelligence Platform"],
+        features: {
+            en: [
+                "Full-Lifecycle Website Content Administration (Data Update, Edit, Delete, Backup, & Restore Processes)",
+                "Periodic Cyber Security & Performance Testing (OWASP Vulnerability Assessment & Web Speed Optimization)",
+                "End-to-End Social Media Engine (Market Research, Daily Scheduled Posting, Creative Designing, & Trend Evaluation)",
+                "Optional Omni-Channel Contact Center (Integrating 13 Digital Chat & Voice Channels into a Unified Custom Dashboard)",
+                "Optional Digital Intelligence Platform (Real-Time Sentiment Analysis, Competitor Tracking, & Early Alert Notification Systems)"
+            ],
+            id: [
+                "Administrasi Konten Website Siklus Penuh (Proses Update, Edit, Delete, Backup, & Restore Data)",
+                "Pengujian Performa & Keamanan Siber Berkala (OWASP Vulnerability Assessment & Optimasi Kecepatan Web)",
+                "Sistem Pengelolaan Media Sosial End-to-End (Riset Pasar, Posting Terjadwal Harian, Desain Kreatif, & Evaluasi Tren)",
+                "Kontak Center Omni-Channel Opsional (Mengintegrasikan 13 Kanal Digital Chat & Voice ke dalam Satu Dasbor Kustom)",
+                "Platform Intelegensi Digital Opsional (Analisis Sentimen Real-Time, Pelacakan Kompetitor, & Sistem Peringatan Dini Isu)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Formulating Comprehensive Service Proposals to Enhance Corporate Brand Positioning and Digital Health Index",
+                "Defining Technical Frameworks for Multi-Platform Content Management, Search Engine Optimization (SEO), and Technical Copywriting",
+                "Structuring Operational Workflows for Daily Social Media Execution, Revision Pipelines, and Scheduled Media Deliverables",
+                "Mapping System Criteria for Advanced Add-ons Including Custom Ticketing Workflows and Sociograph Keyword Data Reporting"
+            ],
+            id: [
+                "Merumuskan Proposal Layanan Komprehensif untuk Meningkatkan Posisi Merek Korporat dan Indeks Kesehatan Digital",
+                "Menetapkan Kerangka Kerja Teknis untuk Manajemen Konten Multi-Platform, Optimasi Mesin Pencari (SEO), dan Copywriting Teknis",
+                "Menyusun Alur Kerja Operasional untuk Eksekusi Media Sosial Harian, Jalur Revisi, dan Hasil Media Terjadwal",
+                "Memetakan Kriteria Sistem untuk Pengaya Tingkat Lanjut Termasuk Alur Kerja Tiket Kustom dan Pelaporan Data Kata Kunci Sosiograf"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    }
 ];

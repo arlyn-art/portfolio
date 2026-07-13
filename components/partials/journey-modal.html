@@ -5,23 +5,25 @@
         id="journey-modal-overlay"
         class="absolute inset-0">
     </div>
+    
     <div
-        class="relative z-10 flex max-h-[92vh] w-full max-w-7xl flex-col overflow-hidden rounded-[32px] border border-border bg-surface shadow-2xl lg:flex-row">
+        class="relative z-10 flex max-h-[92vh] w-full max-w-7xl flex-col overflow-y-auto lg:overflow-hidden rounded-[32px] border border-border bg-surface shadow-2xl lg:flex-row custom-scrollbar">
+        
         <button
             id="close-journey-modal"
             class="absolute right-5 top-5 z-20 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background transition hover:border-accent hover:text-accent">
             <i class="fa-solid fa-xmark"></i>
         </button>
-        <div
-            class="flex w-full flex-col border-b border-border bg-background lg:w-[38%] lg:border-b-0 lg:border-r">
-            <div class="overflow-hidden">
 
+        <div
+            class="flex w-full flex-col border-b border-border bg-background lg:w-[38%] lg:border-b-0 lg:border-r lg:max-h-[92vh]">
+            <div class="overflow-hidden">
                 <img
                     id="journey-cover"
                     src=""
                     class="aspect-[4/3] w-full object-cover transition duration-300">
             </div>
-            <div class="flex-1 overflow-y-auto p-6">
+            <div class="p-6 lg:flex-1 lg:overflow-y-auto custom-scrollbar">
                 <div class="mb-5 flex items-center justify-between">
                     <h3
                         class="text-lg font-bold text-text"
@@ -40,7 +42,7 @@
         </div>
 
         <div
-            class="flex-1 overflow-y-auto">
+            class="w-full lg:flex-1 lg:overflow-y-auto lg:max-h-[92vh] custom-scrollbar">
             <div
                 class="space-y-10 p-8 lg:p-10">
                 <div>
@@ -54,7 +56,6 @@
                             id="journey-location"
                             class="rounded-full border border-border bg-background px-4 py-2 text-sm">
                         </span>
-
                     </div>
                     <h2
                         id="journey-title"
@@ -86,7 +87,6 @@
                         class="text-xl font-bold text-text"
                         data-i18n="journey.modal.highlights">
                     </h3>
-
                     <div
                         id="journey-highlights"
                         class="mt-5 space-y-4">
