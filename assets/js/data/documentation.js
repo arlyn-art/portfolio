@@ -286,5 +286,154 @@ export default [
         },
         liveUrl: null,
         github: null,
+    },
+    {
+        id: "doc-7",
+        category: "documentation",
+        company: "PT Krakatau Information Technology",
+        title: {
+            en: "API Management Platform Integration System Architecture",
+            id: "Arsitektur Sistem Integrasi Platform API Management"
+        },
+        thumbnail: "assets/images/projects/documentation/management.jpg",
+        shortDescription: {
+            en: "Decentralized microservices architecture and integration framework connecting central and regional systems via secure ESB API Gateways.",
+            id: "Arsitektur mikroservis terdesentralisasi dan kerangka kerja integrasi yang menghubungkan sistem pusat dan daerah melalui ESB API Gateway yang aman."
+        },
+        description: {
+            en: "Authored the technical specifications and system integration architecture for Krakatau IT's API Management Platform. The system implements a decentralized model splitting core operations into Central (Kejagung) and Regional (Kejati) layers, orchestrated via robust Enterprise Service Bus (ESB) and microservices protocols. It enables secure multi-database connectivity, asymmetric encryption (RSA 1024), real-time API monitoring, and cross-platform data mapping to ensure high availability and seamless interoperability across heterogeneous enterprise systems.",
+            id: "Menyusun spesifikasi teknis dan arsitektur integrasi sistem untuk Platform Manajemen API Krakatau IT. Sistem ini menerapkan model terdesentralisasi yang membagi operasi inti menjadi lapisan Pusat (Kejagung) dan Daerah (Kejati), yang diorkestrasikan melalui protokol Enterprise Service Bus (ESB) dan mikroservis yang andal. Sistem ini memfasilitasi koneksi multi-database yang aman, enkripsi asimetrik (RSA 1024), pemantauan API waktu nyata, serta pemetaan data lintas platform untuk memastikan ketersediaan tinggi dan interoperabilitas tanpa hambatan di seluruh sistem perusahaan yang heterogen."
+        },
+        technologies: ["Microservices Architecture", "ESB API Gateway", "Network Security & Traffic System", "Multi-Database Integration", "Cloud Platform"],
+        features: {
+            en: [
+                "Decentralized Central-Regional Architecture (Divided into Central/Kejagung and Regional/Kejati data categories connected via microservices)",
+                "Secure Remote Multi-Database Connectivity (Simultaneous integration with Oracle, Tibero, MS SQL, MySQL, PostgreSQL, MariaDB, SAP Hana, MongoDB, and others)",
+                "3-Layer API Security & Protection Protocols (Comprehensive validation including Authentication via credentials, IP Address whitelisting, and Authorization tracking)",
+                "Advanced Data Agent Mechanism (Enables secure data access, extraction, compression, encryption, and transfers over public/private WAN using RSA 1024-bit keys)",
+                "Real-Time Incident Notifications & System Monitoring (Automated email alerts for API downtime, database failures, customer request errors, and response timeouts)"
+            ],
+            id: [
+                "Arsitektur Pusat-Daerah Terdesentralisasi (Terbagi menjadi kategori data Pusat/Kejagung dan Daerah/Kejati yang terhubung via mikroservis)",
+                "Konektivitas Multi-Database Jarak Jauh yang Aman (Integrasi simultan dengan Oracle, Tibero, MS SQL, MySQL, PostgreSQL, MariaDB, SAP Hana, MongoDB, dan lainnya)",
+                "Protokol Keamanan & Perlindungan API 3 Lapis (Validasi komprehensif mencakup Otentikasi kredensial, Pemeriksaan IP, dan Otorisasi akses)",
+                "Mekanisme Agent Data Tingkat Lanjut (Memungkinkan akses data, ekstraksi, kompresi, enkripsi, dan transfer yang aman via WAN dengan enkripsi RSA 1024-bit)",
+                "Notifikasi Kejadian Real-Time & Pemantauan Sistem (Peringatan email otomatis untuk layanan API berhenti, kegagalan database, kesalahan request konsumen, dan timeout)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Designing the System Topography and Data Flow Maps between Accessing Systems, ESB Gateways, Load Balancers, and Backend Microservices",
+                "Formulating Technical Specifications for Multi-Database Connectors, Asymmetric Encryption Methods, and Combined Web Service Logic",
+                "Structuring Network Security Criteria covering Throttling, User Quotas, Rate Limiting, and Enterprise Endpoint Protection",
+                "Defining Platform Operational Frameworks including Centralized Web-Based Monitoring Dashboards and Cross-OS Compatibility Checklists"
+            ],
+            id: [
+                "Merancang Topografi Sistem dan Peta Alur Data antara Sistem Pengakses, ESB Gateway, Load Balancer, dan Mikroservis Backend",
+                "Merumuskan Spesifikasi Teknis untuk Konektor Multi-Database, Metode Enkripsi Asimetrik, dan Logika Gabungan Layanan Web",
+                "Menyusun Kriteria Keamanan Jaringan yang mencakup Throttling, Kuota Pengguna, Pembatasan Request, dan Perlindungan Endpoint Perusahaan",
+                "Menetapkan Kerangka Kerja Operasional Platform termasuk Dasbor Pemantauan Terpusat Berbasis Web dan Checklist Kompatibilitas Lintas Sistem Operasi"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    },
+    {
+        id: "doc-8",
+        category: "documentation",
+        company: "Krakatau Information Technology",
+        title: {
+            en: "Technical Proposal & Presentation: Security Resilience Center (SRC)",
+            id: "Proposal Teknis & Presentasi: Security Resilience Center (SRC)"
+        },
+        thumbnail: "assets/images/projects/documentation/security.jpg",
+        shortDescription: {
+            en: "Comprehensive presentation and analytical material outlining the Next-Generation Cyber Security Operations Center (SOC) framework tailored for the Indonesian threat landscape.",
+            id: "Materi presentasi dan analisis komprehensif yang menguraikan kerangka kerja Cyber Security Operations Center (SOC) Generasi Baru untuk lanskap ancaman di Indonesia."
+        },
+        description: {
+            en: "Synthesized technical and strategic documentation for the Security Resilience Center (SRC), built as a Next-Gen AI-driven Security Operations Center (SOC). The documentation outlines the 3 critical SOC Pillars: People (structured Tier 1-3+ response groups), Process (24/7 Command Center, MITRE ATT&CK killchain analysis, and multi-severity SLAs), and Technology (integrating Ridgebot, Sophos XDR, and Stellar Cyber Open XDR frameworks). The materials detail threat analytics, automated penetration testing blueprints, and cyber awareness programs structured around national intelligence statistics from BSSN honeynets.",
+            id: "Menyusun dokumentasi teknis dan strategis untuk Security Resilience Center (SRC), yang dibangun sebagai Security Operations Center (SOC) Generasi Baru berbasis kecerdasan buatan. Dokumentasi ini menguraikan 3 Pilar utama SOC: People (kelompok respons terstruktur Tier 1-3+), Process (Command Center 24/7, analisis killchain MITRE ATT&CK, dan SLA multi-tingkat keparahan), serta Technology (mengintegrasikan kerangka kerja Ridgebot, Sophos XDR, dan Stellar Cyber Open XDR). Materi tersebut merinci analisis ancaman, cetak biru pengujian penetrasi otomatis, serta program edukasi siber yang distrukturkan berdasarkan statistik intelijen nasional dari honeynet BSSN."
+        },
+        technologies: ["Cybersecurity Framework", "MITRE ATT&CK", "Open XDR Architecture", "SLA Management", "Technical Writing"],
+        features: {
+            en: [
+                "Three-Pillar SOC Framework (Detailed breakdown of operational People, Process, and Technology components)",
+                "Cyber Attack Killchain Visualization (Step-by-step mapping of initial attempts, foothold, propagation, exploration, and impact)",
+                "Incident Severity & SLA Matrix (Structured response tables ranging from 15-minute Critical responses to 7-day Informational cycles)",
+                "Multi-Vendor Tech Stacking (Integration architecture mapping for automated penetration testing and XDR endpoint automation)"
+            ],
+            id: [
+                "Kerangka Kerja SOC Tiga Pilar (Rincian mendalam tentang komponen operasional People, Process, dan Technology)",
+                "Visualisasi Killchain Serangan Siber (Pemetaan bertahap dari upaya awal, foothold, propagasi, eksplorasi, hingga dampak)",
+                "Matriks Tingkat Keparahan & SLA Insiden (Tabel respons terstruktur mulai dari respons Kritis 15 menit hingga siklus Informasi 7 hari)",
+                "Penyusunan Teknologi Multi-Vendor (Arsitektur integrasi pemetaan untuk pengujian penetrasi otomatis dan otomatisasi endpoint XDR)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Technical Material Structuring (Translating highly complex enterprise security metrics into structured presentation layouts)",
+                "SLA & Response Operational Writing (Drafting clear, standardized escalation metrics for corporate cybersecurity incidents)",
+                "Threat Landscape Analysis (Synthesizing BSSN honeynet data and local breach incidents to build data-driven security arguments)",
+                "System Workflow Mapping (Designing the interaction diagrams between enterprise tools like SIEM, SOAR, NDR, and EDR)"
+            ],
+            id: [
+                "Strukturisasi Materi Teknis (Menerjemahkan metrik keamanan korporat yang kompleks ke dalam tata letak presentasi yang terstruktur)",
+                "Penulisan Operasional SLA & Respons (Menyusun metrik eskalasi yang jelas dan terstandarisasi untuk insiden keamanan siber perusahaan)",
+                "Analisis Lanskap Ancaman (Mensintesis data honeynet BSSN dan insiden kebocoran lokal untuk membangun argumen keamanan berbasis data)",
+                "Pemetaan Alur Kerja Sistem (Merancang diagram interaksi antara perangkat korporat seperti SIEM, SOAR, NDR, dan EDR)"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    },
+    {
+        id: "doc-10",
+        category: "documentation",
+        company: "Krakatau Information Technology",
+        title: {
+            en: "Technical Presentation: Integrated Defense Data Analytics System & SISKANHAMRATA Portal",
+            id: "Presentasi Teknis: Sistem Analisis Data Analitik Pertahanan Terintegrasi & Portal SISKANHAMRATA"
+        },
+        thumbnail: "assets/images/projects/documentation/analytics.jpg",
+        shortDescription: {
+            en: "Comprehensive technical solution blueprint outlining an AI-driven Data Analytics System and territorial monitoring framework tailored for national strategic intelligence and military command structures.",
+            id: "Cetak biru solusi teknis komprehensif yang menguraikan Sistem Analisis Data berbasis AI dan kerangka pemantauan teritorial yang dirancang untuk intelijen strategis nasional dan struktur komando militer."
+        },
+        description: {
+            en: "Synthesized highly sensitive corporate presentation materials and architectural workflows for a dual-purpose national security solution. The documentation outlines the first system—an Advanced Media Analytics framework for BAIS TNI designed to automate OSINT, forums, and instant messaging application capture using NLP Sentiment Analysis, Knowledge Graphs, and Predictive Analytics to counter aggressive negative propaganda. The second architecture charts a comprehensive Territorial Surveillance and Infrastructure Monitoring platform (SISKANHAMRATA Portal) built for PUSANTERAD, integrating satellite imagery analytics, dynamic disaster routing simulations, resource optimization, and cross-departmental data synchronization.",
+            id: "Mensintesis materi presentasi perusahaan dan alur kerja arsitektural yang sensitif untuk solusi keamanan nasional dengan fungsi ganda. Dokumentasi ini menguraikan sistem pertama—kerangka kerja Analisis Media Tingkat Lanjut untuk BAIS TNI yang dirancang untuk mengotomatisasi penangkapan data OSINT, forum, dan aplikasi pesan instan menggunakan Analisis Sentimen NLP, Knowledge Graph, dan Analisis Prediktif guna menangkal propaganda negatif yang agresif. Arsitektur kedua memetakan platform Pengawasan Teritorial dan Pemantauan Infrastruktur komprehensif (Portal SISKANHAMRATA) yang dibangun untuk PUSANTERAD, mengintegrasikan analitik citra satelit, simulasi rute bencana dinamis, optimalisasi sumber daya, serta sinkronisasi data lintas departemen."
+        },
+        technologies: ["Defense Technology Framework", "Natural Language Processing (NLP)", "Satellite Imagery Analytics", "Social Network Analysis", "Technical Strategy Documentation"],
+        features: {
+            en: [
+                "Dual Enterprise System Documentation (Detailed architecture specs for both BAIS TNI intelligence analytics and PUSANTERAD territorial frameworks)",
+                "AI-Driven Media Intelligence Flowchart (Full mapping of automatic data extraction, NLP sentiment tracking, and cross-entity tracking)",
+                "SISKANHAMRATA Integrated Portal Architecture (Structured layout of national defense infrastructure categories, military logistics, and strategic materials)",
+                "Disaster & Emergency Simulation Models (Analytical designs for automated critical alerts, evacuation routing, and logistical distribution mapping)"
+            ],
+            id: [
+                "Dokumentasi Sistem Perusahaan Ganda (Spesifikasi arsitektur mendetail untuk analitik intelijen BAIS TNI dan kerangka kerja teritorial PUSANTERAD)",
+                "Alur Kerja Intelijen Media Berbasis AI (Pemetaan penuh dari ekstraksi data otomatis, pelacakan sentimen NLP, dan pelacakan antar entitas)",
+                "Arsitektur Portal Terintegrasi SISKANHAMRATA (Tata letak terstruktur dari kategori infrastruktur pertahanan nasional, logistik militer, dan material strategis)",
+                "Model Simulasi Bencana & Darurat (Desain analitis untuk peringatan kritis otomatis, rute evakuasi, dan pemetaan distribusi logistik)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Strategic Product Documentation (Translating intelligence requirements into high-level enterprise product capability slides)",
+                "System Flow & Data Pipeline Mapping (Structuring the transformation pipeline from unstructured source inputs like Telegram/WA into dynamic visualization outputs)",
+                "Use Case & Scenario Mapping (Drafting realistic operational simulations including satellite-based territory surveillance and crisis response)",
+                "Cross-Agency Integration Planning (Outlining backend data ingest from various national databases including BMKG, BNPB, Dukcapil, and local governments)"
+            ],
+            id: [
+                "Dokumentasi Produk Strategis (Menerjemahkan kebutuhan intelijen ke dalam slide kapabilitas produk perusahaan tingkat tinggi)",
+                "Pemetaan Alur Sistem & Pipeline Data (Menstrukturkan alur transformasi dari input sumber tidak terstruktur seperti Telegram/WA menjadi output visualisasi dinamis)",
+                "Pemetaan Skenario & Kasus Penggunaan (Menyusun simulasi operasional yang realistis termasuk pengawasan wilayah berbasis satelit dan respons krisis)",
+                "Perencanaan Integrasi Lintas Agen (Menguraikan penyerapan data backend dari berbagai basis data nasional termasuk BMKG, BNPB, Dukcapil, dan pemerintah daerah)"
+            ]
+        },
+        liveUrl: null,
+        github: null,
     }
 ];
