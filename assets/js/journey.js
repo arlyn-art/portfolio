@@ -3,7 +3,13 @@ import journeys from "./data/journey-data.js";
 export function initJourney() {
 
     renderJourney();
-
+    document.querySelectorAll(".lang-btn, [data-lang]").forEach(langButton => {
+        langButton.addEventListener("click", () => {
+            setTimeout(() => {
+                renderJourney();
+            }, 50);
+        });
+    });
 }
 
 function renderJourney() {

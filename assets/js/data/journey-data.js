@@ -48,7 +48,7 @@ export default [
 
         highlights: {
             en: [
-                "Solo motorcycle touring.",
+                "Motorcycle touring.",
                 "Enjoyed sunrise above the clouds.",
                 "Crossed mountain roads safely.",
                 "Captured landscapes and travel moments."
