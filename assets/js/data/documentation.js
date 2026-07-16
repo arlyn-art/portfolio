@@ -388,7 +388,7 @@ export default [
         github: null,
     },
     {
-        id: "doc-10",
+        id: "doc-9",
         category: "documentation",
         company: "Krakatau Information Technology",
         title: {
@@ -435,5 +435,152 @@ export default [
         },
         liveUrl: null,
         github: null,
-    }
+    },
+    {
+        id: "doc-10",
+        category: "documentation",
+        company: "Krakatau Information Technology",
+        title: {
+            en: "Corporate Solution Architecture Presentation: Intelligent Enterprise for Industrial Estate Solution",
+            id: "Presentasi Arsitektur Solusi Perusahaan: Intelligent Enterprise untuk Solusi Kawasan Industri"
+        },
+        thumbnail: "assets/images/projects/documentation/industrial.jpg",
+        shortDescription: {
+            en: "Strategic presentation blueprint detailing the implementation of SAP S/4HANA, geospatial asset mapping, and connected operational intelligence tailored to maximize monetization in smart industrial zones.",
+            id: "Cetak biru presentasi strategis yang merinci implementasi SAP S/4HANA, pemetaan aset geospasial, dan intelijen operasional terhubung untuk memaksimalkan monetisasi di kawasan industri pintar."
+        },
+        description: {
+            en: "Authored comprehensive technical and high-level strategy presentation decks for Krakatau IT's Industrial Estate Solution[cite: 9]. The documentation elaborates on transforming traditional industrial layouts into multi-stream revenue generators through digital adoption[cite: 9]. It outlines an Intelligent Enterprise ecosystem anchored by ERP SAP S/4HANA for core financial and logistical operations[cite: 9], integrated alongside Connected Enterprise technologies—including IoT, SCADA, automated telemetry (AMR), and Business Intelligence dashboards[cite: 9]. Additionally, it covers the integration of Geospatial Asset Management systems designed to streamline real-time leasing, land monitoring, and spatial tracking for industrial tenants[cite: 9].",
+            id: "Menyusun dek presentasi teknis dan strategi tingkat tinggi yang komprehensif untuk Solusi Kawasan Industri Krakatau IT[cite: 9]. Dokumentasi ini menguraikan transformasi tata letak kawasan industri tradisional menjadi penghasil pendapatan multi-aliran melalui adopsi digital[cite: 9]. Ini memetakan ekosistem Intelligent Enterprise yang bersandar pada ERP SAP S/4HANA untuk operasi inti keuangan dan logistik[cite: 9], terintegrasi bersama teknologi Connected Enterprise—termasuk IoT, SCADA, telemetri otomatis (AMR), dan dasbor Business Intelligence[cite: 9]. Selain itu, dokumentasi ini mencakup integrasi sistem Manajemen Aset Geospasial yang dirancang untuk merasionalisasi penyewaan real-time, pemantauan lahan, dan pelacakan spasial bagi penyewa industri[cite: 9]."
+        },
+        technologies: ["ERP SAP S/4HANA", "Geospatial Asset Management", "Business Intelligence (BI)", "Connected Enterprise (IoT/SCADA)", "Technical Documentation"],
+        features: {
+            en: [
+                "Intelligent Enterprise Framework Specification (Structuring core modules across ERP SAP S/4HANA, Customer Experience, and Digital Supply Chain)[cite: 9]",
+                "Connected Enterprise Integration Architecture (Mapping technical pipelines for Big Data, ML, AI, SCADA, and Automatic Meter Reading systems)[cite: 9]",
+                "Geospatial Asset Management Layout (Real-time tracking blueprints for moveable and immoveable assets integrated with leasing operations)[cite: 9]",
+                "Digital Transformation Revenue Matrix (Comprehensive breakdown of smart infrastructure monetization streams including fiber optics, smart grids, and utility optimization)[cite: 9]"
+            ],
+            id: [
+                "Spesifikasi Kerangka Kerja Intelligent Enterprise (Menstrukturkan modul inti di seluruh ERP SAP S/4HANA, Customer Experience, dan Digital Supply Chain)[cite: 9]",
+                "Arsitektur Integrasi Connected Enterprise (Memetakan alur teknis untuk Big Data, ML, AI, SCADA, dan sistem Pembacaan Meter Otomatis)[cite: 9]",
+                "Tata Letak Manajemen Aset Geospasial (Cetak biru pelacakan real-time untuk aset bergerak dan tidak bergerak yang terintegrasi dengan operasi penyewaan)[cite: 9]",
+                "Matriks Pendapatan Transformasi Digital (Rincian komprehensif dari aliran monetisasi infrastruktur pintar termasuk serat optik, jaringan pintar, dan optimalisasi utilitas)[cite: 9]"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Technical Presentation Engineering (Formulating solution layouts that bridge core industrial business operations with advanced IT integration frameworks)[cite: 9]",
+                "Revenue Stream Modeling (Documenting infrastructure optimization mechanisms to illustrate business expansion into digital services for tenants)[cite: 9]",
+                "Functional Capabilities Mapping (Detailing integration paths between backend SAP systems and real-time geospatial utility monitoring layers)[cite: 9]"
+            ],
+            id: [
+                "Penyusunan Presentasi Teknis (Merumuskan tata letak solusi yang menjembatani operasi bisnis inti industri dengan kerangka kerja integrasi TI tingkat lanjut)[cite: 9]",
+                "Pemodelan Aliran Pendapatan (Mendokumentasikan mekanisme optimalisasi infrastruktur untuk mengilustrasikan ekspansi bisnis ke dalam layanan digital bagi penyewa)[cite: 9]",
+                "Pemetaan Kapabilitas Fungsional (Merinci jalur integrasi antara sistem SAP backend dan lapisan pemantauan utilitas geospasial real-time)[cite: 9]"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    },
+    {
+        id: "doc-11",
+        category: "documentation",
+        company: "Krakatau Information Technology",
+        title: {
+            en: "Digital Administration and Library Management System Proposal for Mabes TNI AD",
+            id: "Proposal Sistem Manajemen Perpustakaan dan Administrasi Digital untuk Mabes TNI AD"
+        },
+        thumbnail: "assets/images/projects/documentation/tni-ad.jpg",
+        shortDescription: {
+            en: "A comprehensive technical proposal addressing legacy archives modernization, digital library implementation, and centralized correspondence workflows for the Sekretariat Utama of Mabes TNI AD.",
+            id: "Proposal teknis komprehensif yang mengatasi modernisasi arsip lama, implementasi perpustakaan digital, dan alur kerja korespondensi terpusat untuk Sekretariat Utama Mabes TNI AD."
+        },
+        description: {
+            en: "Authored a structured solution proposal for the Sekretariat Utama of Mabes TNI AD to resolve operational bottlenecks in legacy manual administration. The documentation details a digital transformation roadmap to secure historical microfilm records, digitize over 979,000 pages of books and regulations, and transition library workflows into an efficient digital ecosystem. It establishes a centralized system to eliminate fragmented departmental applications, enabling precise correspondence tracking, multi-unit integration, and robust automated backup protocols for official state documents.",
+            id: "Menyusun proposal solusi terstruktur untuk Sekretariat Utama Mabes TNI AD guna menyelesaikan kendala operasional dalam administrasi manual lama. Dokumentasi ini merinci peta jalan transformasi digital untuk mengamankan rekam microfilm bersejarah, mendigitalisasi lebih dari 979.000 halaman buku dan peraturan, serta mengubah alur kerja perpustakaan menjadi ekosistem digital yang efisien. Ini menetapkan sistem terpusat untuk menghilangkan aplikasi departemen yang terfragmentasi, memungkinkan pelacakan korespondensi yang tepat, integrasi multi-unit, dan protokol cadangan otomatis yang kuat untuk dokumen resmi negara."
+        },
+        technologies: ["Digital Library System", "Document Management System (DMS)", "Official Correspondence Tracking", "Microfilm Digitalization Blueprint", "Technical Proposal Engineering"],
+        features: {
+            en: [
+                "Microfilm Preservation Blueprint (Mitigation strategies to digitize 290,500 historical microfilm images stored in manual vaults)",
+                "Mass Document Digitization Scale (Structured framework for scanning and indexing 979,200 pages of books, writings, and regulations)",
+                "Automated Library Management (Standardized service system to streamline cataloging and user access for 6,663 physical books)",
+                "Unified Enterprise Correspondence (Integrated platform replacing legacy, fragmented applications with automated mail tracking and official disposition routing)"
+            ],
+            id: [
+                "Cetak Biru Pelestarian Microfilm (Strategi mitigasi untuk mendigitalisasi 290.500 citra microfilm bersejarah yang disimpan di lemari besi manual)",
+                "Skala Digitalisasi Dokumen Massal (Kerangka kerja terstruktur untuk memindai dan mengindeks 979.200 halaman buku, tulisan, dan peraturan)",
+                "Manajemen Perpustakaan Otomatis (Sistem layanan terstandarisasi untuk merasionalisasi katalogisasi dan akses pengguna untuk 6.663 buku fisik)",
+                "Korespondensi Perusahaan Terpadu (Platform terintegrasi yang menggantikan aplikasi lama yang terfragmentasi dengan pelacakan surat otomatis dan rute disposisi resmi)"
+            ]
+        },
+        responsibilities: {
+            en: [
+                "Technical Vulnerability Analysis (Auditing existing manual record risks, vault storage limitations, and broken legacy software workflows to engineer modern replacements)",
+                "Digitalization Roadmap Design (Formulating precise scaling metrics for historical microfilms, physical libraries, and high-volume military regulatory documents)",
+                "Enterprise Architecture Alignment (Structuring an integrated inter-departmental administrative pipeline to ensure bulletproof backup logging and tracking)"
+            ],
+            id: [
+                "Analisis Kerentanan Teknis (Mengaudit risiko catatan manual saat ini, keterbatasan ruang simpan lemari besi, dan alur kerja perangkat lunak lama yang rusak untuk merekayasa pengganti modern)",
+                "Desain Peta Jalan Digitalisasi (Merumuskan metrik penskalaan yang tepat untuk microfilm bersejarah, perpustakaan fisik, dan dokumen regulasi militer bervolume tinggi)",
+                "Penyelarasan Arsitektur Perusahaan (Menstrukturkan alur administrasi antar-departemen yang terintegrasi untuk memastikan log pencadangan dan pelacakan yang sangat aman)"
+            ]
+        },
+        liveUrl: null,
+        github: null,
+    },
+    {
+        id: "doc-12",
+        category: "documentation",
+        company: "Krakatau Information Technology",
+        title: {
+            en: "Digitalization Assessment 4.0 and Secure Online Test System Documentation",
+            id: "Dokumentasi Digitalisasi Ujian 4.0 dan Sistem Tes Online Aman"
+        },
+        thumbnail: "assets/images/projects/documentation/e-ujian.jpg",
+        shortDescription: {
+            en: "A comprehensive technical documentation detailing secure online examination frameworks, proctor monitoring pipelines, and anti-cheating mechanisms.",
+            id: "Dokumentasi teknis komprehensif yang merinci kerangka kerja ujian online aman, alur pemantauan pengawas, dan mekanisme anti-kecurangan."
+        },
+        description: {
+            en: "Detailed the implementation structure of Digitalization Assessment 4.0, mapping synchronous and asynchronous assessment workflows. The documentation outlines rigorous secure browser frameworks, hardware validation protocols, and an integrated proctor interface featuring live webcam tracking, device blocking, and centralized system logs to completely mitigate cheating methods like remote access or unauthorized application switching.",
+            id: "Merinci struktur implementasi Digitalisasi Ujian 4.0, memetakan alur kerja penilaian sinkron dan asinkron. Dokumentasi ini menguraikan kerangka kerja browser aman yang ketat, protokol validasi perangkat keras, dan antarmuka pengawas terintegrasi yang dilengkapi pelacakan webcam langsung, pemblokiran perangkat, serta log sistem terpusat untuk meminimalkan metode kecurangan seperti akses jarak jauh atau perpindahan aplikasi tanpa izin."
+        },
+        technologies: [
+            "Secure Examination Framework",
+            "Synchronous & Asynchronous Assessments",
+            "Live Proctoring System",
+            "Anti-Cheating Detection Protocols",
+            "Hardware & Network Validation"
+        ],
+        features: {
+            en: [
+            "Multi-Method Assessment Setup (Structured configuration supporting simultaneous competency-based synchronous exams and flexible, understanding-based asynchronous tests)",
+            "Strict Anti-Cheating Lockdown (Secure browser mechanism that forces full-screen mode, disables Alt+Tab or remote access software, and encrypts exam question data)",
+            "Hardware Identity Validation (Advanced tracking verifying IP and MAC Address to enforce a strict one-user-per-device rule during the session)",
+            "Comprehensive Proctor Control (Real-time dashboard enabling live webcam streaming, direct warning messages, system force logout, and instant device blocking)"
+            ],
+            id: [
+            "Pengaturan Penilaian Multi-Metode (Konfigurasi terstruktur yang mendukung ujian sinkron serentak berbasis kompetensi dan tes asinkron fleksibel berbasis pemahaman)",
+            "Penguncian Ketat Anti-Kecurangan (Mekanisme browser aman yang memaksa mode layar penuh, menonaktifkan Alt+Tab atau perangkat lunak kendali jarak jauh, dan mengenkripsi data soal ujian)",
+            "Validasi Identitas Perangkat Keras (Pelacakan canggih yang memverifikasi Alamat IP dan MAC untuk menegakkan aturan ketat satu pengguna per perangkat selama sesi berlangsung)",
+            "Kontrol Pengawas Komprehensif (Dashboard real-time yang memungkinkan streaming webcam langsung, pengiriman pesan peringatan langsung, force logout sistem, dan pemblokiran perangkat instan)"
+            ]
+        },
+        responsibilities: {
+            en: [
+            "Exam Workflow Mapping (Structuring distinct execution modules for synchronous and asynchronous assessment frameworks)",
+            "Security & Vulnerability Mitigation (Designing blueprint criteria to block remote access applications, screen switching, and multi-device identity fraud)",
+            "Proctor Interface Specification (Defining operational parameters for real-time tracking, student status resets, and mandatory warning log archives)"
+            ],
+            id: [
+            "Pemetaan Alur Kerja Ujian (Menstrukturkan modul eksekusi yang berbeda untuk kerangka kerja penilaian sinkron dan asinkron)",
+            "Mitigasi Keamanan & Kerentanan (Mendesain kriteria cetak biru untuk memblokir aplikasi akses jarak jauh, perpindahan layar, dan penipuan identitas multi-perangkat)",
+            "Spesifikasi Antarmuka Pengawas (Menetapkan parameter operasional untuk pelacakan real-time, reset status peserta, dan arsip log peringatan wajib)"
+            ]
+        },
+        liveUrl: null,
+        github: null
+    },
 ];

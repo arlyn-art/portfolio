@@ -23,8 +23,8 @@ export default [
         ],
 
         shortDescription: {
-            en: "A solo motorcycle trip through one of Indonesia's most beautiful highlands.",
-            id: "Perjalanan solo menggunakan sepeda motor menuju salah satu dataran tinggi terindah di Indonesia."
+            en: "A motorcycle trip through one of Indonesia's most beautiful highlands.",
+            id: "Perjalanan menggunakan sepeda motor menuju salah satu dataran tinggi terindah di Indonesia."
         },
 
         description: {

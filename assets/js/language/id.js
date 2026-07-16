@@ -18,7 +18,7 @@ export default {
                 label: "Tahun Pengalaman"
             },
             {
-                value: "30+",
+                value: "20+",
                 label: "Project"
             },
             {
