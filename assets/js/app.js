@@ -7,6 +7,7 @@ import { initContact } from "./contact.js";
 import { initProfile } from "./profile.js";
 import { initJourney } from "./journey.js";
 import { initJourneyModal } from "./journey-modal.js";
+import { initFeaturedProjects } from './featured-project.js';
 
 function updateActiveNav(page) {
     const navLinks = document.querySelectorAll('[data-page]');
@@ -28,11 +29,13 @@ async function initPage(page) {
     if (page === 'home') {
         await loadComponent('overview', './components/overview.html');
         await loadComponent('experience', './components/experience.html');
+        await loadComponent('featured-projects', './components/featured-projects.html')
         await loadComponent('projects', './components/projects.html');
         await loadComponent('contact', './components/contact.html');
         await loadComponent('project-modal-container', './components/partials/project-modal.html');
         await loadComponent('floating', './components/floating.html');
 
+        initFeaturedProjects();
         initProjects({ limit: 3 });
         initProjectModal();
         initProfile();

@@ -1,7 +1,8 @@
-<section class="relative min-h-screen overflow-hidden bg-background text-text flex items-center">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[600px] rounded-full bg-accent opacity-10 blur-[180px]">
+<section class="relative min-h-screen overflow-hidden bg-background text-text flex items-center py-32 lg:py-0 px-4">
+    <!-- Ornamen Background (Disesuaikan agar tidak menutupi teks di mobile) -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 h-[300px] w-[300px] md:h-[600px] md:w-[600px] rounded-full bg-accent opacity-10 blur-[100px] md:blur-[180px] pointer-events-none">
     </div>
-    <div class="absolute inset-0 opacity-[0.03]"
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
         style="
             background-image:
                 linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
@@ -9,45 +10,51 @@
             background-size:48px 48px;">
     </div>
 
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-20 items-center">
-            <!-- LEFT -->
-            <div>
+    <div class="container mx-auto px-4 sm:px-6 relative z-10">
+        <!-- Mengubah gap dan urutan grid di mobile -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            <!-- LEFT CONTENT -->
+            <div class="text-left order-1">
                 <span class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm text-subtext">
                     <span class="h-2 w-2 rounded-full bg-green-400"></span>
                     <span data-i18n="hero.badge"></span>
                 </span>
 
-                <h1 class="mt-8 text-5xl md:text-7xl font-black leading-tight">
+                <!-- Skala ukuran font disesuaikan dari text-4xl di mobile hingga text-7xl di desktop -->
+                <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight break-words">
                     <span data-i18n="hero.greeting"></span>
-                    <span class="bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent"
+                    <span class="bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent block sm:inline"
                         data-i18n="hero.name"></span>
                 </h1>
 
-                <h2 class="mt-6 text-2xl md:text-4xl font-semibold text-subtext"
+                <h2 class="mt-4 text-xl sm:text-2xl md:text-4xl font-semibold text-subtext"
                     data-i18n="hero.job">
                 </h2>
-
-                <p
-                    class="mt-8 max-w-xl leading-8 text-subtext"
+                
+                <p class="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-subtext"
+                    data-i18n="hero.subjob">
+                </p>
+                <p class="mt-4 max-w-xl text-sm sm:text-base leading-relaxed text-subtext"
                     data-i18n="hero.description">
                 </p>
 
-                <div class="mt-10 flex gap-4">
+                <!-- Tombol responsif: Menumpuk vertikal di mobile sangat kecil, sejajar di layar lebih besar -->
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <a href="./assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer"
-                        class="rounded-xl bg-accent px-6 py-4 text-white font-semibold transition hover:-translate-y-1">
+                        class="text-center rounded-xl bg-accent px-6 py-4 text-white font-semibold transition hover:-translate-y-1 shadow-lg shadow-accent/20">
                         <span data-i18n="hero.buttons.cv"></span>
                     </a>
-                    <a href="./assets/pdf/portofolio.pdf" target="_blank" rel="noopener noreferrer"
-                        class="rounded-xl border border-border bg-surface px-6 py-4 font-semibold transition hover:border-accent">
+                    <a href="" data-page="projects" target="_blank" rel="noopener noreferrer"
+                        class="text-center rounded-xl border border-border bg-surface px-6 py-4 font-semibold transition hover:border-accent">
                         <span data-i18n="hero.buttons.portfolio"></span>
                     </a>
                 </div>
 
-                <div class="grid grid-cols-4 gap-8 mt-16 border-t border-border pt-8" 
+                <!-- STATS: Diubah menjadi 2 kolom di mobile, dan 4 kolom di desktop -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mt-12 border-t border-border pt-8" 
                     x-data="{
                         animateCounter(el) {
-                            // Jeda sedikit nunggu i18n selesai render text
                             setTimeout(() => {
                                 const targetText = el.innerText.trim();
                                 const target = parseInt(targetText.replace(/[^0-9]/g, ''), 10);
@@ -73,67 +80,91 @@
                     }">
                     
                     <div>
-                        <h3 class="text-3xl font-bold"
+                        <h3 class="text-2xl sm:text-3xl font-bold text-text"
                             data-i18n="hero.stats.0.value"
                             x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.0.label"></p>
+                        <p class="mt-1 text-xs sm:text-sm text-subtext" data-i18n="hero.stats.0.label"></p>
                     </div>
 
                     <div>
-                        <h3 class="text-3xl font-bold"
+                        <h3 class="text-2xl sm:text-3xl font-bold text-text"
                             data-i18n="hero.stats.1.value"
                             x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.1.label"></p>
+                        <p class="mt-1 text-xs sm:text-sm text-subtext" data-i18n="hero.stats.1.label"></p>
                     </div>
 
                     <div>
-                        <h3 class="text-3xl font-bold"
+                        <h3 class="text-2xl sm:text-3xl font-bold text-text"
                             data-i18n="hero.stats.2.value"
                             x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.2.label"></p>
+                        <p class="mt-1 text-xs sm:text-sm text-subtext" data-i18n="hero.stats.2.label"></p>
                     </div>
 
                     <div>
-                        <h3 class="text-3xl font-bold"
+                        <h3 class="text-2xl sm:text-3xl font-bold text-text"
                             data-i18n="hero.stats.3.value"
                             x-init="animateCounter($el)">
                         </h3>
-                        <p class="mt-2 text-sm text-subtext" data-i18n="hero.stats.3.label"></p>
+                        <p class="mt-1 text-xs sm:text-sm text-subtext" data-i18n="hero.stats.3.label"></p>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT -->
-            <div class="hidden lg:flex justify-center">
-                <div class="relative w-[460px] rounded-3xl border border-border bg-surface p-5 shadow-xl">
-                    <div class="flex gap-2 mb-5">
+            <!-- RIGHT CONTENT (CARD CODE & STATUS) -->
+            <!-- Menggunakan w-full dengan max-w untuk mencegah kebocoran resolusi layar -->
+            <div class="flex justify-center order-2 lg:order-2 w-full">
+                <div class="relative w-full max-w-[460px] rounded-3xl border border-border bg-surface p-4 sm:p-5 shadow-xl overflow-hidden">
+                    <div class="flex gap-2 mb-4">
                         <span class="w-3 h-3 rounded-full bg-red-500"></span>
                         <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
                         <span class="w-3 h-3 rounded-full bg-green-500"></span>
                     </div>
 
                     <div class="space-y-4">
-                        <div class="font-mono text-sm md:text-base leading-relaxed text-subtext px-2">
+                        <!-- Code Box: Menambahkan overflow-x-auto agar kode panjang tidak merusak box -->
+                        <div class="font-mono text-xs sm:text-sm md:text-base leading-relaxed text-subtext px-1 sm:px-2 overflow-x-auto whitespace-nowrap scrollbar-none">
                             <div><span class="text-gray-400">&lt;</span><span class="text-pink-500">div</span> <span class="text-blue-400">id</span><span class="text-gray-400">=</span><span class="text-green-400">"hero"</span><span class="text-gray-400">&gt;</span></div>
-                            <div class="pl-6"><span class="text-gray-400">&lt;</span><span class="text-pink-500">h1</span><span class="text-gray-400">&gt;</span><span class="text-text">Hello, World!</span><span class="text-gray-400">&lt;/</span><span class="text-pink-500">h1</span><span class="text-gray-400">&gt;</span></div>
-                            <div class="pl-6"><span class="text-gray-400">&lt;</span><span class="text-pink-500">p</span><span class="text-gray-400">&gt;</span><span class="text-text">Turning coffee into code...</span><span class="text-gray-400">&lt;/</span><span class="text-pink-500">p</span><span class="text-gray-400">&gt;</span></div>
+                            <div class="pl-4 sm:pl-6"><span class="text-gray-400">&lt;</span><span class="text-pink-500">h1</span><span class="text-gray-400">&gt;</span><span class="text-text">Hello, World!</span><span class="text-gray-400">&lt;/</span><span class="text-pink-500">h1</span><span class="text-gray-400">&gt;</span></div>
+                            <div class="pl-4 sm:pl-6"><span class="text-gray-400">&lt;</span><span class="text-pink-500">p</span><span class="text-gray-400">&gt;</span><span class="text-text">Turning coffee into code...</span><span class="text-gray-400">&lt;/</span><span class="text-pink-500">p</span><span class="text-gray-400">&gt;</span></div>
                             <div><span class="text-gray-400">&lt;/</span><span class="text-pink-500">div</span><span class="text-gray-400">&gt;</span></div>
                         </div>
 
-                        <div class="rounded-xl bg-background p-6 mt-8 border border-border">
-                            <p class="font-mono text-green-500 font-semibold">
+                        <!-- Status Box -->
+                        <div class="rounded-xl bg-background p-4 sm:p-6 mt-6 sm:mt-8 border border-border">
+                            <p class="font-mono text-green-500 font-semibold text-sm sm:text-base">
                                 &lt;Developer /&gt;
                             </p>
-                            <p class="mt-4 text-subtext"
-                                data-i18n="hero.codeText">
-                                </p>
+
+                            <h3 class="mt-4 text-sm sm:text-base font-semibold text-text"
+                                data-i18n="hero.currentStatus.title">
+                            </h3>
+
+                            <div class="mt-4 space-y-3 sm:space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 flex-shrink-0 text-sm"></i>
+                                    <span class="text-xs sm:text-sm text-subtext leading-normal" data-i18n="hero.currentStatus.items.0"></span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 flex-shrink-0 text-sm"></i>
+                                    <span class="text-xs sm:text-sm text-subtext leading-normal" data-i18n="hero.currentStatus.items.1"></span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 flex-shrink-0 text-sm"></i>
+                                    <span class="text-xs sm:text-sm text-subtext leading-normal" data-i18n="hero.currentStatus.items.2"></span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 flex-shrink-0 text-sm"></i>
+                                    <span class="text-xs sm:text-sm text-subtext leading-normal" data-i18n="hero.currentStatus.items.3"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -189,6 +220,12 @@
                         </button>
 
                         <button
+                            data-section="featured-projects"
+                            class="section-tab rounded-full px-4 py-3 text-sm font-medium text-subtext transition hover:text-text md:px-6 md:text-base"
+                            data-i18n="secondary.button_label.5">
+                        </button>
+
+                        <button
                             data-section="projects"
                             class="section-tab rounded-full px-4 py-3 text-sm font-medium text-subtext transition hover:text-text md:px-6 md:text-base"
                             data-i18n="secondary.button_label.3">
@@ -220,6 +257,14 @@
 </div>
 
 <div id="experience" class="portfolio-section opacity-0"></div>
+
+<div class="section-divider flex items-center justify-center py-0 opacity-0 transition-all duration-500">
+    <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
+    <div class="mx-4 h-2 w-2 rounded-full bg-accent/60"></div>
+    <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>
+</div>
+
+<div id="featured-projects" class="portfolio-section opacity-0"></div>
 
 <div class="section-divider flex items-center justify-center py-0 opacity-0 transition-all duration-500">
     <div class="h-1 flex-1 max-w-24 bg-accent/60"></div>

@@ -1,35 +1,45 @@
 export default {
     hero: {
-        badge: "Available for Freelance",
+        badge: "Available for Remote Opportunities",
         greeting: "Hi, I'm",
         name: "Arlyn",
         job: "Full Stack Developer",
+        subjob: "Laravel • Vue • Node.js Developer",
         description:
-            "I build modern websites that are fast, scalable and user friendly.",
+            "I build scalable web applications with Laravel, Vue.js, and modern backend architecture focused on clean code, performance, and great user experience.",
 
         buttons: {
-            cv: "View CV",
-            portfolio: "View Portfolio"
+            cv: "Download CV",
+            portfolio: "Explore Projects"
         },
 
         stats: [
             {
+                value: "20+",
+                label: "Projects"
+            },
+                        {
                 value: "4+",
                 label: "Years Experience"
             },
             {
-                value: "20+",
-                label: "Projects"
-            },
-            {
                 value: "100%",
-                label: "Client Satisfaction"
+                label: "Commitment"
             },
             {
                 value: "20+",
                 label: "Clients & Partners"
-            }
-        ]
+            },
+        ],
+        currentStatus: {
+            title: "Current Status",
+            items: [
+                "Available for Remote Opportunities",
+                "Open to Full-time & Freelance",
+                "Based in Indonesia (UTC+7)",
+                "Comfortable in English Communication"
+            ]
+        },
     },
 
     secondary: {
@@ -37,34 +47,38 @@ export default {
         subtitle: "Building Digital Experiences",
         description: "From backend architecture to modern web interfaces—here's what I've been working on.",
 
-        button_label: ["All", "Overview", "Experience", "Projects", "Contact"]
+        button_label: ["All", "Overview", "Experience", "Projects", "Contact", "Featured Projects"]
     },
 
     overview: {
         title: "OVERVIEW",
-        subtitle: "Building modern, fast, and scalable web applications.",
+
+        subtitle: "Building scalable web applications with clean architecture and modern technologies.",
+
         description:
-            "I am a Full Stack Web Developer with over 3 years of professional experience building web applications using Laravel, Vue.js, React, Filament, and Tailwind CSS.",
+            "I'm a Full Stack Developer with over 4 years of experience building business web applications. I specialize in Laravel and modern web technologies, focusing on clean architecture, maintainable code, scalable systems, and intuitive user experiences.",
 
         cards: [
             {
-                title: "Full Stack Development",
+                title: "Backend Development",
                 description:
-                    "Building end-to-end web applications using Laravel, REST APIs, and secure relational databases."
+                    "Building scalable backend systems with Laravel, REST APIs, authentication, business logic, and relational databases while keeping the codebase clean and maintainable."
             },
+
             {
-                title: "Modern Interface",
+                title: "Frontend Development",
                 description:
-                    "Creating responsive, clean, and user-friendly interfaces with Blade, Vue.js, React, and Tailwind CSS."
+                    "Creating responsive, accessible, and user-friendly interfaces using Vue.js, React, Blade, and Tailwind CSS to deliver seamless user experiences."
             },
+
             {
-                title: "System Architecture",
+                title: "Software Architecture",
                 description:
-                    "Designing database structures, application architecture, deployment pipelines, debugging, and performance optimization."
+                    "Designing application architecture, database structures, deployment workflows, debugging strategies, and performance optimization for long-term maintainability."
             }
         ],
 
-        tech_stack: "Tech Stack"
+        tech_stack: "Core Technologies"
     },
 
     experience: {
@@ -74,26 +88,68 @@ export default {
             "Professional experiences that have shaped my expertise in building modern web applications.",
 
         current: {
-            badge: "Current Position",
+            badge: "Full-time",
+
             position: "Website Programmer",
+
             company: "PT Design Tiga Selaras",
+
             period: "Nov 2024 — Present",
+
             description:
-                "Developing company websites, CMS dashboards, REST APIs, database structures, deployment, and performance optimization using the Laravel ecosystem."
+                "Developing internal business applications, CMS platforms, company websites, and backend services using Laravel. Collaborating with the development team to deliver scalable, maintainable, and production-ready software solutions.",
+
+            highlights_title: "Highlights",
+
+            highlights: [
+                "Developed internal business applications.",
+                "Built CMS platforms for company operations.",
+                "Designed and integrated REST APIs.",
+                "Improved application maintainability through clean architecture."
+            ],
+
+            responsibilities_title: "Key Responsibilities",
+
+            responsibilities: [
+                "Backend Development",
+                "REST API",
+                "Database Design",
+                "Performance Optimization",
+                "Deployment & Maintenance"
+            ],
+
+            environment_title: "Environment"
         },
 
         freelance: {
-            title: "Active Freelance",
+            badge: "Freelance",
             position: "Full Stack Developer",
             company: "Self-Employed",
             period: "Sep 2023 — Present",
             description:
-                "Building websites, CMS dashboards, REST APIs, and internal business systems for clients across various industries."
+                "Developing custom web applications, CMS platforms, company profile websites, and internal business systems for clients across multiple industries. Managing projects from requirement gathering through development, testing, deployment, and post-launch support.",
+            highlights_title: "Highlights",
+            highlights: [
+                "Built custom business web applications.",
+                "Developed CMS platforms tailored to client needs.",
+                "Delivered responsive and modern company websites.",
+                "Provided maintenance and continuous feature enhancements."
+            ],
+            services_title: "Services",
+            services: [
+                "Full Stack Development",
+                "REST API",
+                "CMS Development",
+                "UI Implementation",
+                "Client Support"
+            ],
+            environment_title: "Environment"
         },
 
         previous: {
             title: "Previous Experience",
-
+            description:
+                "My professional journey has provided experience across technical support, documentation, and software development, helping me build strong communication, analytical thinking, and problem-solving skills.",
             items: [
                 {
                     company: "PT Krakatau Information Technology",
@@ -101,24 +157,24 @@ export default {
                     roles: [
                         {
                             period: "Apr 2022 — Jun 2022",
-                            position: "Customer Services",
+                            position: "Customer Service",
                             description:
-                                "Continued supporting the COVID-19 Task Force project after the service contract transitioned from the previous vendor to PT Krakatau Information Technology."
+                                "Supported the COVID-19 Task Force service after the project transitioned to a new vendor. Assisted users, resolved operational issues, and ensured service continuity during the transition."
                         },
                         {
                             period: "Jul 2022 — Jun 2023",
                             position: "Technical Writer",
                             description:
-                                "Continued under a new contract as a Technical Writer, preparing technical documentation, SOPs, and collaborating with cross-functional teams to support operational processes."
+                                "Prepared technical documentation, user guides, SOPs, and operational documents while collaborating with multiple teams to improve documentation quality and internal processes."
                         }
                     ]
                 },
                 {
-                    position: "Supervisor Helpdesk",
                     company: "PT Ivosights",
                     period: "Jan 2021 — Mar 2022",
+                    position: "Supervisor Helpdesk",
                     description:
-                        "Led helpdesk operations for the COVID-19 Task Force project, coordinating daily support activities until the service contract transitioned to a new provider."
+                        "Led the helpdesk team supporting the COVID-19 Task Force project, coordinated daily operations, monitored service quality, and ensured support activities were delivered efficiently until the project transitioned to a new service provider."
                 }
             ]
         }
@@ -142,11 +198,14 @@ export default {
     },
 
     footer: {
-        "about": "Helping turn digital ideas into reality through clean code and interactive design.",
-        "nav_title": "Navigation",
-        "connect_title": "Let's Connect",
-        "connect_desc": "Interested in collaborating? Feel free to contact me anytime.",
-        "built_with": "Built with using Tailwind & Alpine"
+        role: "Full Stack Developer",
+        about: "I build scalable business applications, campaign platforms, and modern web experiences with a strong focus on performance, maintainability, and user experience.",
+        nav_title: "Quick Links",
+        contact_title: "Contact",
+        location: "Jakarta, Indonesia",
+        connect_title: "Let's Connect",
+        connect_desc: "Have a project in mind or looking for a developer? I'd love to hear from you.",
+        built_with: "Built with using Vite, Tailwind CSS & Vanilla JavaScript"
     },
 
     profile: {
@@ -225,6 +284,42 @@ export default {
             }
         ]
 
+    },
+
+    contact: {
+        title: "CONTACT",
+        subtitle: "Let's Build Something Meaningful Together",
+        description:
+            "I'm currently open to full-time opportunities, freelance collaborations, and long-term partnerships. Whether you have a project in mind, need a reliable developer, or simply want to connect, I'd be happy to hear from you.",
+        info_description: "I usually reply within 24 hours. Feel free to reach out through any of the channels below.",
+        info_title: "Get In Touch",
+        location_title: "Location",
+        location:
+            "South Jakarta, Indonesia",
+        availability_title: "Availability",
+        availability:
+            "Open for Full-time & Freelance Projects",
+        response_title: "Response Time",
+        response:
+            "Usually within 24 hours",
+        whatsapp_title: "WhatsApp",
+        email_title: "Email",
+        social_title: "Find Me Online",
+        form_title: "Send Me a Message",
+        form_description:
+            "Tell me about your project, business idea, or job opportunity. I'll get back to you as soon as possible.",
+        label_name: "Your Name",
+        placeholder_name: "John Doe",
+        label_email: "Email Address",
+        placeholder_email: "john@example.com",
+        label_subject: "Subject",
+        placeholder_subject: "Project Collaboration",
+        label_message: "Message",
+        placeholder_message:
+            "Tell me about your project...",
+        btn_send: "Send Message",
+        footer_note:
+            "Your information will remain private. No spam, ever."
     }
 
 }

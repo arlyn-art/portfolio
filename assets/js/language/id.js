@@ -1,69 +1,85 @@
 export default {
     hero: {
-        badge: "Available for Freelance",
+        badge: "Available for Remote Opportunities",
         greeting: "Hi, I'm",
         name: "Arlyn",
         job: "Full Stack Developer",
+        subjob: "Laravel • Vue • Node.js Developer",
         description:
-            "Saya membangun website modern yang cepat, scalable, dan mudah digunakan.",
+            "Saya membangun aplikasi web yang scalable dengan Laravel, Vue.js, dan arsitektur backend modern—berfokus pada kode bersih, performa, dan pengalaman pengguna yang baik.",
 
         buttons: {
-            cv: "Lihat CV",
-            portfolio: "Lihat Portofolio"
+            cv: "Download CV",
+            portfolio: "Explore Projects"
         },
 
         stats: [
-            {
-                value: "4+",
-                label: "Tahun Pengalaman"
-            },
             {
                 value: "20+",
                 label: "Project"
             },
             {
+                value: "4+",
+                label: "Tahun Pengalaman"
+            },
+            {
                 value: "100%",
-                label: "Kepuasan Klien"
+                label: "Komitmen"
             },
             {
                 value: "20+",
                 label: "Klien & Mitra"
             }
-        ]
+        ],
+
+        currentStatus: {
+            title: "Status Saat Ini",
+            items: [
+                "Tersedia untuk pekerjaan Remote",
+                "Terbuka untuk Full-time & Freelance",
+                "Berdomisili di Indonesia (UTC+7)",
+                "Nyaman berkomunikasi dalam Bahasa Inggris"
+            ]
+        },
     },
+
     secondary: {
         title: "JELAJAHI",
         subtitle: "Membangun Solusi Digital",
         description: "Dari arsitektur backend hingga antarmuka web modern, berikut karya dan pengalaman yang telah saya bangun.",
 
-        button_label: ["Semua", "Tinjauan", "Pengalaman", "Project", "Kontak"]
+        button_label: ["Semua", "Tinjauan", "Pengalaman", "Proyek", "Kontak", "Proyek Unggulan"]
     },
 
     overview: {
         title: "OVERVIEW",
-        subtitle: "Membangun aplikasi web yang modern, cepat, dan scalable.",
+
+        subtitle: "Membangun aplikasi web yang scalable dengan arsitektur yang bersih dan teknologi modern.",
+
         description:
-            "Saya adalah Full Stack Web Developer dengan pengalaman lebih dari 3 tahun dalam membangun aplikasi web menggunakan Laravel, Vue.js, React, Filament, dan Tailwind CSS.",
+            "Saya adalah Full Stack Developer dengan pengalaman lebih dari 4 tahun dalam membangun aplikasi web untuk kebutuhan bisnis. Berfokus pada Laravel dan teknologi web modern dengan pendekatan clean architecture, kode yang mudah dipelihara, sistem yang scalable, serta pengalaman pengguna yang optimal.",
 
         cards: [
             {
-                title: "Full Stack Development",
+                title: "Backend Development",
                 description:
-                    "Mengembangkan aplikasi web end-to-end menggunakan Laravel, REST API, dan database relasional yang aman serta mudah dikembangkan."
+                    "Membangun sistem backend menggunakan Laravel, REST API, autentikasi, business logic, dan database relasional dengan kode yang bersih serta mudah dikembangkan."
             },
+
             {
-                title: "Modern Interface",
+                title: "Frontend Development",
                 description:
-                    "Membangun antarmuka yang responsif, bersih, dan nyaman digunakan menggunakan Blade, Vue.js, React, dan Tailwind CSS."
+                    "Mengembangkan antarmuka yang responsif, mudah digunakan, dan nyaman di berbagai perangkat menggunakan Vue.js, React, Blade, dan Tailwind CSS."
             },
+
             {
-                title: "System Architecture",
+                title: "Software Architecture",
                 description:
-                    "Merancang struktur database, alur sistem, deployment server, debugging, dan optimasi performa aplikasi."
+                    "Merancang arsitektur aplikasi, struktur database, deployment workflow, debugging, dan optimasi performa agar sistem tetap stabil dan mudah dipelihara."
             }
         ],
 
-        tech_stack: "Tech Stack"
+        tech_stack: "Teknologi Utama"
     },
 
     experience: {
@@ -73,52 +89,85 @@ export default {
             "Pengalaman profesional yang membentuk kemampuan saya dalam membangun aplikasi web modern.",
 
         current: {
-            badge: "Posisi Saat Ini",
+            badge: "Full-time",
             position: "Website Programmer",
             company: "PT Design Tiga Selaras",
             period: "Nov 2024 — Sekarang",
             description:
-                "Mengembangkan website perusahaan, CMS, REST API, database, deployment, dan optimasi performa menggunakan ekosistem Laravel."
+                "Mengembangkan aplikasi bisnis internal, platform CMS, website perusahaan, serta layanan backend menggunakan Laravel. Berkolaborasi dengan tim pengembang untuk menghasilkan aplikasi yang scalable, mudah dipelihara, dan siap digunakan di lingkungan produksi.",
+            highlights_title: "Kontribusi",
+            highlights: [
+                "Mengembangkan aplikasi bisnis internal.",
+                "Membangun platform CMS untuk operasional perusahaan.",
+                "Merancang dan mengintegrasikan REST API.",
+                "Meningkatkan maintainability aplikasi melalui clean architecture."
+            ],
+            responsibilities_title: "Tanggung Jawab",
+            responsibilities: [
+                "Backend Development",
+                "REST API",
+                "Database Design",
+                "Optimasi Performa",
+                "Deployment & Maintenance"
+            ],
+            environment_title: "Teknologi"
         },
 
         freelance: {
-            title: "Freelance Aktif",
+            badge: "Freelance",
             position: "Full Stack Developer",
-            company: "Self-Employed",
+            company: "Freelance",
             period: "Sep 2023 — Sekarang",
             description:
-                "Membangun website, CMS, REST API, dan sistem internal sesuai kebutuhan berbagai klien."
+                "Mengembangkan aplikasi web kustom, platform CMS, website company profile, dan sistem bisnis internal untuk berbagai klien dari berbagai industri. Menangani proses pengembangan mulai dari analisis kebutuhan, implementasi, pengujian, deployment, hingga pemeliharaan aplikasi.",
+            highlights_title: "Kontribusi",
+            highlights: [
+                "Mengembangkan aplikasi web sesuai kebutuhan bisnis klien.",
+                "Membangun platform CMS yang disesuaikan dengan kebutuhan operasional.",
+                "Membuat website modern yang responsif dan mudah digunakan.",
+                "Memberikan maintenance serta pengembangan fitur lanjutan."
+            ],
+            services_title: "Layanan",
+            services: [
+                "Full Stack Development",
+                "REST API",
+                "CMS Development",
+                "Implementasi UI",
+                "Client Support"
+            ],
+            environment_title: "Teknologi"
         },
 
         previous: {
             title: "Pengalaman Sebelumnya",
+            description:
+                "Perjalanan profesional saya memberikan pengalaman di bidang technical support, dokumentasi teknis, hingga pengembangan perangkat lunak yang membentuk kemampuan komunikasi, analisis, dan penyelesaian masalah.",
             items: [
                 {
                     company: "PT Krakatau Information Technology",
                     period: "Apr 2022 — Jun 2023",
                     roles: [
-
                         {
                             period: "Apr 2022 — Jun 2022",
-                            position: "Customer Services",
+                            position: "Customer Service",
                             description:
-                                "Melanjutkan dukungan pada proyek Satgas COVID-19 setelah kontrak layanan berpindah dari vendor sebelumnya ke PT Krakatau Information Technology."
+                                "Mendukung operasional layanan Satgas COVID-19 setelah proyek dialihkan ke vendor baru. Menangani kebutuhan pengguna, membantu penyelesaian kendala operasional, dan memastikan layanan tetap berjalan dengan baik selama masa transisi."
                         },
                         {
                             period: "Jul 2022 — Jun 2023",
                             position: "Technical Writer",
                             description:
-                                "Melanjutkan kontrak baru sebagai Technical Writer dengan menyusun dokumentasi teknis, SOP, dan berkolaborasi dengan berbagai tim untuk mendukung kebutuhan operasional."
+                                "Menyusun dokumentasi teknis, panduan pengguna, SOP, serta dokumen operasional dengan berkolaborasi bersama berbagai tim untuk meningkatkan kualitas dokumentasi dan proses kerja."
                         }
-
                     ]
                 },
+
                 {
-                    position: "Supervisor Helpdesk",
                     company: "PT Ivosights",
                     period: "Jan 2021 — Mar 2022",
+                    position: "Supervisor Helpdesk",
                     description:
-                        "Memimpin operasional helpdesk pada proyek Satgas COVID-19, mengoordinasikan layanan dan penyelesaian masalah hingga kontrak layanan dialihkan ke penyedia berikutnya."
+                        "Memimpin tim helpdesk pada proyek Satgas COVID-19, mengoordinasikan operasional harian, memantau kualitas layanan, dan memastikan seluruh aktivitas dukungan berjalan dengan baik hingga proyek dialihkan ke penyedia layanan berikutnya."
                 }
             ]
         }
@@ -137,16 +186,19 @@ export default {
     },
 
     channels:{
-        title:"👋 Hubungi Saya Melalui<br>Media Sosial",
+        title:"👋 Hubungi Saya Melalui Media Sosial",
         description:"Pilih saluran komunikasi yang ingin digunakan untuk menghubungi saya.",
     },
 
     footer: {
-        "about": "Membantu merealisasikan ide digital menjadi kenyataan melalui kode yang bersih dan desain yang interaktif.",
-        "nav_title": "Navigasi",
-        "connect_title": "Mari Terhubung",
-        "connect_desc": "Tertarik untuk berkolaborasi? Hubungi saya kapan saja.",
-        "built_with": "Dibuat dengan menggunakan Tailwind & Alpine"
+        role: "Full Stack Developer",
+        about: "Saya membangun aplikasi bisnis yang scalable, platform campaign, serta web modern dengan fokus pada performa, maintainability, dan pengalaman pengguna.",
+        nav_title: "Navigasi",
+        contact_title: "Kontak",
+        location: "Jakarta, Indonesia",
+        connect_title: "Mari Terhubung",
+        connect_desc: "Punya ide proyek atau sedang mencari developer? Jangan ragu untuk menghubungi saya.",
+        built_with: "Dibangun dengan menggunakan Vite, Tailwind CSS & Vanilla JavaScript"
     },
 
     profile: {
@@ -222,6 +274,41 @@ export default {
                 description:"Menjelajahi tempat dan budaya baru membuat saya selalu terdorong untuk terus belajar, baik dalam teknologi maupun kehidupan."
             }
         ]
+    },
 
+    contact: {
+        title: "KONTAK",
+        subtitle: "Mari Bangun Sesuatu yang Bermakna Bersama",
+        description:
+            "Saya saat ini terbuka untuk peluang kerja penuh waktu, kolaborasi freelance, dan kemitraan jangka panjang. Jika Anda memiliki proyek, membutuhkan pengembang yang dapat diandalkan, atau sekadar ingin terhubung, saya akan senang mendengar dari Anda.",
+        info_description: "Saya biasanya membalas dalam 24 jam. Silakan hubungi melalui salah satu saluran di bawah ini.",
+        info_title: "Hubungi Saya",
+        location_title: "Lokasi",
+        location:
+            "Jakarta Selatan, Indonesia",
+        availability_title: "Ketersediaan",
+        availability:
+            "Terbuka untuk Proyek Penuh Waktu & Freelance",
+        response_title: "Waktu Respons",
+        response:
+            "Biasanya dalam 24 jam",
+        whatsapp_title: "WhatsApp",
+        email_title: "Email",
+        social_title: "Temukan Saya Secara Online",
+        form_title: "Kirim Pesan",
+        form_description:
+            "Ceritakan tentang proyek, ide bisnis, atau kesempatan kerja Anda. Saya akan membalas secepatnya.",
+        label_name: "Nama Anda",
+        placeholder_name: "John Doe",
+        label_email: "Alamat Email",
+        placeholder_email: "john@example.com",
+        label_subject: "Subjek",
+        placeholder_subject: "Kolaborasi Proyek",
+        label_message: "Pesan",
+        placeholder_message:
+            "Ceritakan tentang proyek Anda...",
+        btn_send: "Kirim Pesan",
+        footer_note:
+            "Informasi Anda akan tetap pribadi. Tidak ada spam."
     }
 }

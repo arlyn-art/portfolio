@@ -4,8 +4,9 @@ export function initSectionTabs() {
 
     const sections = document.querySelectorAll('.portfolio-section');
     const dividers = document.querySelectorAll('.section-divider');
-    // Ambil element wrapper tombol view all
     const viewAllWrapper = document.getElementById('view-all-wrapper');
+
+    const scrollContainer = document.querySelector('.tabs-scroll');
 
     function applyFadeUpAnimation(element) {
         element.classList.remove('hidden', 'opacity-0', 'translate-y-4');
@@ -27,7 +28,6 @@ export function initSectionTabs() {
             applyFadeUpAnimation(divider);
         });
 
-        // Di tab 'All', pastikan tombol View All muncul
         if (viewAllWrapper) {
             applyFadeUpAnimation(viewAllWrapper);
         }
@@ -49,22 +49,50 @@ export function initSectionTabs() {
 
         applyFadeUpAnimation(target);
 
-        // --- LOGIKA TOGGLE BUTTON VIEW ALL ---
         if (viewAllWrapper) {
             if (id === 'projects') {
-                // Jika masuk ke tab projects, munculkan tombol
                 applyFadeUpAnimation(viewAllWrapper);
             } else {
-                // Jika masuk ke tab lain (overview, contact, dll), sembunyikan
                 viewAllWrapper.classList.add('hidden');
                 viewAllWrapper.classList.remove('opacity-100', 'translate-y-0');
             }
         }
-        // -------------------------------------
 
         target.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
+        });
+    }
+
+    if (scrollContainer) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        scrollContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scrollContainer.classList.add('active');
+            startX = e.pageX - scrollContainer.offsetLeft;
+            scrollLeft = scrollContainer.scrollLeft;
+        });
+
+        scrollContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            scrollContainer.classList.remove('active');
+        });
+
+        scrollContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollContainer.classList.remove('active');
+        });
+
+        scrollContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault(); 
+            
+            const x = e.pageX - scrollContainer.offsetLeft;
+            const walk = (x - startX) * 1.5; 
+            scrollContainer.scrollLeft = scrollLeft - walk;
         });
     }
 

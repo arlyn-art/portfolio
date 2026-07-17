@@ -1,16 +1,3 @@
-.tabs-scroll{
-    overflow-x:auto;
-    overflow-y:hidden;
-
-    scrollbar-width:none;
-    -ms-overflow-style:none;
-
-    scroll-behavior:smooth;
-}
-
-.tabs-scroll::-webkit-scrollbar{
-    display:none;
-}
 
 @media (max-width:768px){
 
@@ -178,4 +165,27 @@
             translate(28px,-16px)
             rotate(8deg);
     }
+}
+
+.tabs-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    cursor: grab; 
+    user-select: none; 
+    
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabs-scroll::-webkit-scrollbar {
+    display: none; 
+}
+
+.tabs-scroll {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.tabs-scroll.active {
+    cursor: grabbing; 
 }
